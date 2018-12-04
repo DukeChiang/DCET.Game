@@ -29,13 +29,18 @@ namespace ETModel
 
 		private readonly UnOrderMultiMap<Type, ILoadSystem> loadSystems = new UnOrderMultiMap<Type, ILoadSystem>();
 
-		private readonly UnOrderMultiMap<Type, IUpdateSystem> updateSystems = new UnOrderMultiMap<Type, IUpdateSystem>();
+        private readonly UnOrderMultiMap<Type, IFixedUpdateSystem> fixedUpdateSystems = new UnOrderMultiMap<Type, IFixedUpdateSystem>();
+
+        private readonly UnOrderMultiMap<Type, IUpdateSystem> updateSystems = new UnOrderMultiMap<Type, IUpdateSystem>();
 
 		private readonly UnOrderMultiMap<Type, ILateUpdateSystem> lateUpdateSystems = new UnOrderMultiMap<Type, ILateUpdateSystem>();
 
 		private readonly UnOrderMultiMap<Type, IChangeSystem> changeSystems = new UnOrderMultiMap<Type, IChangeSystem>();
 
-		private Queue<long> updates = new Queue<long>();
+        private Queue<long> fixedUpdates = new Queue<long>();
+        private Queue<long> fixedUpdates2 = new Queue<long>();
+
+        private Queue<long> updates = new Queue<long>();
 		private Queue<long> updates2 = new Queue<long>();
 		
 		private readonly Queue<long> starts = new Queue<long>();
@@ -66,7 +71,8 @@ namespace ETModel
 			}
 
 			this.awakeSystems.Clear();
-			this.lateUpdateSystems.Clear();
+            this.fixedUpdateSystems.Clear();
+            this.lateUpdateSystems.Clear();
 			this.updateSystems.Clear();
 			this.startSystems.Clear();
 			this.loadSystems.Clear();
@@ -90,7 +96,13 @@ namespace ETModel
 					this.awakeSystems.Add(objectSystem.Type(), objectSystem);
 				}
 
-				IUpdateSystem updateSystem = obj as IUpdateSystem;
+                IFixedUpdateSystem fixedUpdateSystem = obj as IFixedUpdateSystem;
+                if (fixedUpdateSystem != null)
+                {
+                    this.fixedUpdateSystems.Add(fixedUpdateSystem.Type(), fixedUpdateSystem);
+                }
+
+                IUpdateSystem updateSystem = obj as IUpdateSystem;
 				if (updateSystem != null)
 				{
 					this.updateSystems.Add(updateSystem.Type(), updateSystem);
@@ -180,9 +192,14 @@ namespace ETModel
 			if (this.loadSystems.ContainsKey(type))
 			{
 				this.loaders.Enqueue(component.InstanceId);
-			}
+            }
 
-			if (this.updateSystems.ContainsKey(type))
+            if (this.fixedUpdateSystems.ContainsKey(type))
+            {
+                this.fixedUpdates.Enqueue(component.InstanceId);
+            }
+
+            if (this.updateSystems.ContainsKey(type))
 			{
 				this.updates.Enqueue(component.InstanceId);
 			}
@@ -540,7 +557,46 @@ namespace ETModel
 			ObjectHelper.Swap(ref this.lateUpdates, ref this.lateUpdates2);
 		}
 
-		public void Run(string type)
+        public void FixedUpdate()
+        {
+            while (this.fixedUpdates.Count > 0)
+            {
+                long instanceId = this.fixedUpdates.Dequeue();
+                Component component;
+                if (!this.allComponents.TryGetValue(instanceId, out component))
+                {
+                    continue;
+                }
+                if (component.IsDisposed)
+                {
+                    continue;
+                }
+
+                List<IFixedUpdateSystem> iFixedUpdateSystems = this.fixedUpdateSystems[component.GetType()];
+                if (iFixedUpdateSystems == null)
+                {
+                    continue;
+                }
+
+                this.fixedUpdates2.Enqueue(instanceId);
+
+                foreach (IFixedUpdateSystem iFixedUpdateSystem in iFixedUpdateSystems)
+                {
+                    try
+                    {
+                        iFixedUpdateSystem.Run(component);
+                    }
+                    catch (Exception e)
+                    {
+                        Log.Error(e);
+                    }
+                }
+            }
+
+            ObjectHelper.Swap(ref this.fixedUpdates, ref this.fixedUpdates2);
+        }
+
+        public void Run(string type)
 		{
 			List<IEvent> iEvents;
 			if (!this.allEvents.TryGetValue(type, out iEvents))

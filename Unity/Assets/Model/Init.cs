@@ -25,10 +25,6 @@ namespace ETModel
 				Game.Scene.AddComponent<GlobalConfigComponent>();
 				Game.Scene.AddComponent<NetOuterComponent>();
 				Game.Scene.AddComponent<ResourcesComponent>();
-				Game.Scene.AddComponent<PlayerComponent>();
-				Game.Scene.AddComponent<UnitComponent>();
-				Game.Scene.AddComponent<ClientFrameComponent>();
-				Game.Scene.AddComponent<UIComponent>();
 
 				// 下载ab包
 				await BundleHelper.DownloadBundle();
@@ -50,9 +46,15 @@ namespace ETModel
 			{
 				Log.Error(e);
 			}
-		}
+        }
 
-		private void Update()
+        private void FixedUpdate()
+        {
+            Game.Hotfix.FixedUpdate?.Invoke();
+            Game.EventSystem.FixedUpdate();
+        }
+
+        private void Update()
 		{
 			OneThreadSynchronizationContext.Instance.Update();
 			Game.Hotfix.Update?.Invoke();

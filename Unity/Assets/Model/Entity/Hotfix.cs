@@ -17,7 +17,8 @@ namespace ETModel
 
 		private IStaticMethod start;
 
-		public Action Update;
+        public Action FixedUpdate;
+        public Action Update;
 		public Action LateUpdate;
 		public Action OnApplicationQuit;
 

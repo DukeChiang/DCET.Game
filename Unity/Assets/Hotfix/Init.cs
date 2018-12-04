@@ -16,7 +16,6 @@ namespace ETHotfix
 				ETModel.Game.Hotfix.LateUpdate = () => { LateUpdate(); };
 				ETModel.Game.Hotfix.OnApplicationQuit = () => { OnApplicationQuit(); };
 				
-				Game.Scene.AddComponent<UIComponent>();
 				Game.Scene.AddComponent<OpcodeTypeComponent>();
 				Game.Scene.AddComponent<MessageDispatherComponent>();
 
@@ -27,7 +26,6 @@ namespace ETHotfix
 
 				UnitConfig unitConfig = (UnitConfig)Game.Scene.GetComponent<ConfigComponent>().Get(typeof(UnitConfig), 1001);
 				Log.Debug($"config {JsonHelper.ToJson(unitConfig)}");
-
 				Game.EventSystem.Run(EventIdType.InitSceneStart);
 			}
 			catch (Exception e)
@@ -36,7 +34,19 @@ namespace ETHotfix
 			}
 		}
 
-		public static void Update()
+        public static void FixedUpdate()
+        {
+            try
+            {
+                Game.EventSystem.FixedUpdate();
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
+            }
+        }
+
+        public static void Update()
 		{
 			try
 			{
