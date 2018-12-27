@@ -14,36 +14,37 @@ using ILRuntime.CLR.Utils;
 
 namespace ILRuntime.Runtime.Generated
 {
-    unsafe class UnityEngine_Debug_Binding
+    unsafe class ETModel_OpcodeHelper_Binding
     {
         public static void Register(ILRuntime.Runtime.Enviorment.AppDomain app)
         {
             BindingFlags flag = BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly;
             MethodBase method;
             Type[] args;
-            Type type = typeof(UnityEngine.Debug);
-            args = new Type[]{typeof(System.Object)};
-            method = type.GetMethod("LogWarning", flag, null, args, null);
-            app.RegisterCLRMethodRedirection(method, LogWarning_0);
+            Type type = typeof(ETModel.OpcodeHelper);
+            args = new Type[]{typeof(System.UInt16)};
+            method = type.GetMethod("IsNeedDebugLogMessage", flag, null, args, null);
+            app.RegisterCLRMethodRedirection(method, IsNeedDebugLogMessage_0);
 
 
         }
 
 
-        static StackObject* LogWarning_0(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
+        static StackObject* IsNeedDebugLogMessage_0(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
         {
             ILRuntime.Runtime.Enviorment.AppDomain __domain = __intp.AppDomain;
             StackObject* ptr_of_this_method;
             StackObject* __ret = ILIntepreter.Minus(__esp, 1);
 
             ptr_of_this_method = ILIntepreter.Minus(__esp, 1);
-            System.Object @message = (System.Object)typeof(System.Object).CheckCLRTypes(StackObject.ToObject(ptr_of_this_method, __domain, __mStack));
-            __intp.Free(ptr_of_this_method);
+            System.UInt16 @opcode = (ushort)ptr_of_this_method->Value;
 
 
-            UnityEngine.Debug.LogWarning(@message);
+            var result_of_this_method = ETModel.OpcodeHelper.IsNeedDebugLogMessage(@opcode);
 
-            return __ret;
+            __ret->ObjectType = ObjectTypes.Integer;
+            __ret->Value = result_of_this_method ? 1 : 0;
+            return __ret + 1;
         }
 
 

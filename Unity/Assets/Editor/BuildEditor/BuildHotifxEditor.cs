@@ -16,17 +16,21 @@ namespace ETEditor
 
         static Startup()
         {
+#if ILRuntime
             // Copy最新的pdb文件
             string[] pdbDirs = 
             {
                 "Temp/UnityVS_bin/Debug", 
                 "Temp/UnityVS_bin/Release", 
                 "Temp/Debug", 
-                "Temp/Release"
+                "Temp/Release",
+                "Temp/bin/Debug", 
+                "Temp/bin/Release"
             };
 
             DateTime dateTime = DateTime.MinValue;
             string newestPdb = "";
+            string newestDll = "";
             foreach (string pdbDir in pdbDirs)
             {
                 string pdbPath = Path.Combine(pdbDir, HotfixPdb);
@@ -39,20 +43,25 @@ namespace ETEditor
                 if (lastWriteTimeUtc > dateTime)
                 {
                     newestPdb = pdbPath;
+                    newestDll = Path.Combine(pdbDir, HotfixDll);
                     dateTime = lastWriteTimeUtc;
                 }
             }
-            
+
             if (newestPdb != "")
             {
+                File.Copy(Path.Combine(newestDll), Path.Combine(CodeDir, "Hotfix.dll.bytes"), true);
                 File.Copy(Path.Combine(newestPdb), Path.Combine(CodeDir, "Hotfix.pdb.bytes"), true);
-                Log.Info($"复制Hotfix.pdb到Res/Code完成");
+                Log.Info($"复制vs的Hotfix.dll跟Hotfix.pdb到Res/Code完成");
             }
+#else
             
             File.Copy(Path.Combine(ScriptAssembliesDir, HotfixDll), Path.Combine(CodeDir, "Hotfix.dll.bytes"), true);
             File.Copy(Path.Combine(ScriptAssembliesDir, HotfixMdb), Path.Combine(CodeDir, "Hotfix.mdb.bytes"), true);
-
-            Log.Info($"复制Hotfix.dll, Hotfix.mdb到Res/Code完成");
+            Log.Info($"复制unity的Hotfix.dll跟Hotfix.mdb到Res/Code完成");
+#endif
+    
+            
             AssetDatabase.Refresh ();
         }
     }
