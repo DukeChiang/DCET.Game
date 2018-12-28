@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
+using ETHotfix;
 
 namespace ETModel
 {
@@ -56,9 +57,10 @@ namespace ETModel
 
 		public void LoadHotfixAssembly()
 		{
-			Game.Scene.GetComponent<ResourcesComponent>().LoadBundle($"code.unity3d");
 #if ILRuntime
-			Log.Debug($"当前使用的是ILRuntime模式");
+            Game.Scene.GetComponent<ResourcesComponent>().LoadBundle($"code.unity3d");
+
+            Log.Debug($"当前使用的是ILRuntime模式");
 			this.appDomain = new ILRuntime.Runtime.Enviorment.AppDomain();
 			GameObject code = (GameObject)Game.Scene.GetComponent<ResourcesComponent>().GetAsset("code.unity3d", "Code");
 			byte[] assBytes = code.Get<TextAsset>("Hotfix.dll").bytes;
@@ -71,8 +73,18 @@ namespace ETModel
 			}
 
 			this.start = new ILStaticMethod(this.appDomain, "ETHotfix.Init", "Start", 0);
-#else
-			Log.Debug($"当前使用的是Mono模式");
+
+            Game.Scene.GetComponent<ResourcesComponent>().UnloadBundle($"code.unity3d");
+
+#elif DISABLE_HOTFIX            
+            this.assembly = Assembly.Load("Unity.Hotfix");
+            Type hotfixInit = this.assembly.GetType("ETHotfix.Init");
+
+            this.start = new MonoStaticMethod(hotfixInit, "Start");
+#else            
+            Game.Scene.GetComponent<ResourcesComponent>().LoadBundle($"code.unity3d");
+
+            Log.Debug($"当前使用的是Mono模式");
 			GameObject code = (GameObject)Game.Scene.GetComponent<ResourcesComponent>().GetAsset("code.unity3d", "Code");
 			byte[] assBytes = code.Get<TextAsset>("Hotfix.dll").bytes;
 			byte[] mdbBytes = code.Get<TextAsset>("Hotfix.mdb").bytes;
@@ -80,8 +92,9 @@ namespace ETModel
 
 			Type hotfixInit = this.assembly.GetType("ETHotfix.Init");
 			this.start = new MonoStaticMethod(hotfixInit, "Start");
-#endif
+
 			Game.Scene.GetComponent<ResourcesComponent>().UnloadBundle($"code.unity3d");
-		}
-	}
+#endif
+        }
+    }
 }
