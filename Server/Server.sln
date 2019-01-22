@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KcpLib", "ThirdParty\Libs\K
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BehaviorDesigner.Runtime", "ThirdParty\BehaviorDesigner.Runtime\BehaviorDesigner.Runtime.csproj", "{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnityEngine", "ThirdParty\UnityEngine\UnityEngine.csproj", "{B9F0E75F-3700-41A4-A312-1632E1FEE713}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -149,6 +151,18 @@ Global
 		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Release|x64.Build.0 = Release|Any CPU
 		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Release|x86.ActiveCfg = Release|Any CPU
 		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Release|x86.Build.0 = Release|Any CPU
+		{B9F0E75F-3700-41A4-A312-1632E1FEE713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F0E75F-3700-41A4-A312-1632E1FEE713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9F0E75F-3700-41A4-A312-1632E1FEE713}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B9F0E75F-3700-41A4-A312-1632E1FEE713}.Debug|x64.Build.0 = Debug|Any CPU
+		{B9F0E75F-3700-41A4-A312-1632E1FEE713}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B9F0E75F-3700-41A4-A312-1632E1FEE713}.Debug|x86.Build.0 = Debug|Any CPU
+		{B9F0E75F-3700-41A4-A312-1632E1FEE713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9F0E75F-3700-41A4-A312-1632E1FEE713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9F0E75F-3700-41A4-A312-1632E1FEE713}.Release|x64.ActiveCfg = Release|Any CPU
+		{B9F0E75F-3700-41A4-A312-1632E1FEE713}.Release|x64.Build.0 = Release|Any CPU
+		{B9F0E75F-3700-41A4-A312-1632E1FEE713}.Release|x86.ActiveCfg = Release|Any CPU
+		{B9F0E75F-3700-41A4-A312-1632E1FEE713}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -161,6 +175,7 @@ Global
 		{02B4D7EC-AC40-4675-963E-53CAB9A86BDE} = {5D11E730-0CAA-4A47-BA1A-379004F0F6D9}
 		{9C71523E-4F8A-4F13-9884-DF580BAC8194} = {5D11E730-0CAA-4A47-BA1A-379004F0F6D9}
 		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8} = {5D11E730-0CAA-4A47-BA1A-379004F0F6D9}
+		{B9F0E75F-3700-41A4-A312-1632E1FEE713} = {5D11E730-0CAA-4A47-BA1A-379004F0F6D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE120158-643A-409C-B8F2-5E654E4D6D70}

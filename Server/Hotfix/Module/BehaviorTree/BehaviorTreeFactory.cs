@@ -16,9 +16,7 @@ namespace ETHotfix
 
                 if(behavior != null)
                 {
-                    var behaviorTree = ComponentFactory.Create<BehaviorTree, Behavior>(behavior);
-                    behaviorTree.AddComponent<BehaviorTreeComponent, BehaviorTree>(behaviorTree);
-                    return behaviorTree;
+                    return ComponentFactory.Create<BehaviorTree, Behavior>(behavior);
                 }
 
                 return null;

@@ -49,4 +49,8 @@
     <Folder Include="Composites\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\UnityEngine\UnityEngine.csproj" />
+  </ItemGroup>
+
 </Project>

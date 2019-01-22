@@ -20,13 +20,4 @@ namespace ETHotfix
             BehaviorManager.instance?.LateUpdate();
         }
     }
-
-    [ObjectSystem]
-    public class BehaviorManagerComponentFixedUpdateSystem : FixedUpdateSystem<BehaviorManagerComponent>
-    {
-        public override void FixedUpdate(BehaviorManagerComponent self)
-        {
-            BehaviorManager.instance?.FixedUpdate();
-        }
-    }
 }

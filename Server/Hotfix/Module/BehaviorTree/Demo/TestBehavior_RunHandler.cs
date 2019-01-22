@@ -2,7 +2,7 @@
 
 namespace ETHotfix
 {
-    // 分发数值监听
+    // 测试行为树Demo
     [Event(EventIdType.TestBehavior)]
     public class TestBehavior_RunHandler : AEvent<string>
     {
