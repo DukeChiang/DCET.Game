@@ -6,8 +6,14 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.App", "App\Server.App.csproj", "{11464C2C-E0B6-476E-ABB1-87445E736B76}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Hotfix", "Hotfix\Server.Hotfix.csproj", "{E383A68D-1928-46F4-8896-4E99DF331476}"
+	ProjectSection(ProjectDependencies) = postProject
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8} = {631C35E5-83F3-459F-AF08-9E6AA63DC6B8}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Model", "Model\Server.Model.csproj", "{85CB09B5-6392-4A13-BAF8-025218BFF496}"
+	ProjectSection(ProjectDependencies) = postProject
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8} = {631C35E5-83F3-459F-AF08-9E6AA63DC6B8}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdParty", "ThirdParty", "{5D11E730-0CAA-4A47-BA1A-379004F0F6D9}"
 EndProject
@@ -22,6 +28,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Protobuf", "ThirdParty\Google.Protobuf\Google.Protobuf.csproj", "{02B4D7EC-AC40-4675-963E-53CAB9A86BDE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KcpLib", "ThirdParty\Libs\KcpLib.csproj", "{9C71523E-4F8A-4F13-9884-DF580BAC8194}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BehaviorDesigner.Runtime", "ThirdParty\BehaviorDesigner.Runtime\BehaviorDesigner.Runtime.csproj", "{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +137,18 @@ Global
 		{9C71523E-4F8A-4F13-9884-DF580BAC8194}.Release|x64.Build.0 = Release|Any CPU
 		{9C71523E-4F8A-4F13-9884-DF580BAC8194}.Release|x86.ActiveCfg = Release|Any CPU
 		{9C71523E-4F8A-4F13-9884-DF580BAC8194}.Release|x86.Build.0 = Release|Any CPU
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Debug|x64.Build.0 = Debug|Any CPU
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Debug|x86.Build.0 = Debug|Any CPU
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Release|x64.ActiveCfg = Release|Any CPU
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Release|x64.Build.0 = Release|Any CPU
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Release|x86.ActiveCfg = Release|Any CPU
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +160,7 @@ Global
 		{46A590DE-EBA3-4928-AB78-5C514D08C9E7} = {6946DBCF-B81C-4B2A-A7C5-94A337D915C2}
 		{02B4D7EC-AC40-4675-963E-53CAB9A86BDE} = {5D11E730-0CAA-4A47-BA1A-379004F0F6D9}
 		{9C71523E-4F8A-4F13-9884-DF580BAC8194} = {5D11E730-0CAA-4A47-BA1A-379004F0F6D9}
+		{631C35E5-83F3-459F-AF08-9E6AA63DC6B8} = {5D11E730-0CAA-4A47-BA1A-379004F0F6D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE120158-643A-409C-B8F2-5E654E4D6D70}

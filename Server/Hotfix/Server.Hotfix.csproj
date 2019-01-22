@@ -17,6 +17,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Other\**" />
+    <Compile Include="..\..\Unity\Assets\Hotfix\Module\BehaviorTree\Demo\LogActionComponent.cs">
+      <Link>Module\BehaviorTree\Demo\LogActionComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Hotfix\Module\BehaviorTree\Demo\PatrolActionComponent.cs">
+      <Link>Module\BehaviorTree\Demo\PatrolActionComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Hotfix\Module\BehaviorTree\Demo\PlaySkillActionComponent.cs">
+      <Link>Module\BehaviorTree\Demo\PlaySkillActionComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Hotfix\Module\BehaviorTree\Demo\SeekActionComponent.cs">
+      <Link>Module\BehaviorTree\Demo\SeekActionComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Hotfix\Module\BehaviorTree\Demo\WithInRoomActionComponent.cs">
+      <Link>Module\BehaviorTree\Demo\WithInRoomActionComponent.cs</Link>
+    </Compile>
     <Compile Include="..\..\Unity\Assets\Model\Module\Message\NetOuterComponentSystem.cs">
       <Link>Module\Message\NetOuterComponentSystem.cs</Link>
     </Compile>
@@ -28,5 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Module\Http\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BehaviorDesignerRuntime">
+      <HintPath>..\ThirdParty\BehaviorDesigner.Runtime\Core\BehaviorDesignerRuntime.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

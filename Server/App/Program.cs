@@ -57,17 +57,14 @@ namespace App
 						Game.Scene.AddComponent<NetInnerComponent, string>(innerConfig.Address);
 						Game.Scene.AddComponent<NetOuterComponent, string>(outerConfig.Address);
 						Game.Scene.AddComponent<LocationProxyComponent>();
-						Game.Scene.AddComponent<RealmGateAddressComponent>();
 						break;
 					case AppType.Gate:
-						Game.Scene.AddComponent<PlayerComponent>();
 						Game.Scene.AddComponent<ActorMessageDispatherComponent>();
 						Game.Scene.AddComponent<NetInnerComponent, string>(innerConfig.Address);
 						Game.Scene.AddComponent<NetOuterComponent, string>(outerConfig.Address);
 						Game.Scene.AddComponent<LocationProxyComponent>();
 						Game.Scene.AddComponent<ActorMessageSenderComponent>();
 						Game.Scene.AddComponent<ActorLocationSenderComponent>();
-						Game.Scene.AddComponent<GateSessionKeyComponent>();
 						break;
 					case AppType.Location:
 						Game.Scene.AddComponent<NetInnerComponent, string>(innerConfig.Address);
@@ -75,18 +72,14 @@ namespace App
 						break;
 					case AppType.Map:
 						Game.Scene.AddComponent<NetInnerComponent, string>(innerConfig.Address);
-						Game.Scene.AddComponent<UnitComponent>();
 						Game.Scene.AddComponent<LocationProxyComponent>();
 						Game.Scene.AddComponent<ActorMessageSenderComponent>();
 						Game.Scene.AddComponent<ActorLocationSenderComponent>();
 						Game.Scene.AddComponent<ActorMessageDispatherComponent>();
-						Game.Scene.AddComponent<ServerFrameComponent>();
 						break;
 					case AppType.AllServer:
 						Game.Scene.AddComponent<ActorMessageSenderComponent>();
 						Game.Scene.AddComponent<ActorLocationSenderComponent>();
-						Game.Scene.AddComponent<PlayerComponent>();
-						Game.Scene.AddComponent<UnitComponent>();
 						Game.Scene.AddComponent<DBComponent>();
 						Game.Scene.AddComponent<DBProxyComponent>();
 						Game.Scene.AddComponent<DBCacheComponent>();
@@ -96,10 +89,12 @@ namespace App
 						Game.Scene.AddComponent<NetOuterComponent, string>(outerConfig.Address);
 						Game.Scene.AddComponent<LocationProxyComponent>();
 						Game.Scene.AddComponent<AppManagerComponent>();
-						Game.Scene.AddComponent<RealmGateAddressComponent>();
-						Game.Scene.AddComponent<GateSessionKeyComponent>();
 						Game.Scene.AddComponent<ConfigComponent>();
-						Game.Scene.AddComponent<ServerFrameComponent>();
+
+                        Game.Scene.AddComponent<BehaviorManagerComponent>();
+
+                        Game.EventSystem.Run(EventIdType.TestBehavior, "Demo");
+
 						// Game.Scene.AddComponent<HttpComponent>();
 						break;
 					case AppType.Benchmark:
