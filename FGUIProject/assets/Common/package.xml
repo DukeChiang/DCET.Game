@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="1n4czled" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="sfv94" name="Loading.xml" path="/" exported="true"/>
+    <image id="xzq9b" name="ui_common_bg_loading.jpg" path="/Res/"/>
+    <image id="xzq9c" name="ui_common_jindutiao_bar.png" path="/Res/" scale="9grid" scale9grid="18,6,36,12"/>
+    <image id="xzq9d" name="ui_common_jindutiao_bg.png" path="/Res/" scale="9grid" scale9grid="5,4,10,8"/>
+    <component id="xzq96" name="LoadingProgressBar.xml" path="/Base/"/>
+  </resources>
+  <publish name="Common" rotation="true" extractAlpha="true"/>
+</packageDescription>

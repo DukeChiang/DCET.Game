@@ -25,9 +25,12 @@ namespace ETModel
 				Game.Scene.AddComponent<GlobalConfigComponent>();
 				Game.Scene.AddComponent<NetOuterComponent>();
 				Game.Scene.AddComponent<ResourcesComponent>();
+                Game.Scene.AddComponent<FUIPackageComponent>();
+                Game.Scene.AddComponent<FUIComponent>();
+                Game.Scene.AddComponent<FUIInitComponent>();
 
-				// 下载ab包
-				await BundleHelper.DownloadBundle();
+                // 下载ab包
+                await BundleHelper.DownloadBundle();
 
 				Game.Hotfix.LoadHotfixAssembly();
 

@@ -1,10 +1,9 @@
 {
     "name": "Unity.Model",
     "references": [
-        "Unity.ThirdParty"
+        "Unity.ThirdParty",
+        "Unity.FairyGUI.Runtime"
     ],
-    "optionalUnityReferences": [],
     "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": true
+    "excludePlatforms": []
 }

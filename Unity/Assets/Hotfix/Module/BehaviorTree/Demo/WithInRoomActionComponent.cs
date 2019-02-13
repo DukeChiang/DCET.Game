@@ -15,12 +15,10 @@ namespace ETHotfix
     public class WithInRoomActionComponent : Component
     {
         private HotfixAction hotfixAction;
-        private Entity behaviorTreeParent;
 
         public void Awake(Entity behaviorTreeParent, HotfixAction hotfixAction, BehaviorTreeConfig behaviorTreeConfig)
         {
             this.hotfixAction = hotfixAction;
-            this.behaviorTreeParent = behaviorTreeParent;
             
             if (this.hotfixAction != null)
             {
@@ -50,7 +48,6 @@ namespace ETHotfix
             }
 
             hotfixAction = null;
-            behaviorTreeParent = null;
         }
     }
 }

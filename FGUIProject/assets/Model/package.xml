@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="2w4fpdl4" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="ofor0" name="Loading.xml" path="/" exported="true"/>
+    <image id="n8hd1" name="ui_model_bg_loading.jpg" path="/Res/"/>
+    <image id="n8hd2" name="ui_model_jindutiao_bg.png" path="/Res/" scale="9grid" scale9grid="5,4,10,8"/>
+    <image id="n8hd3" name="ui_model_jindutiao_bar.png" path="/Res/" scale="9grid" scale9grid="18,6,36,12"/>
+    <component id="n8hd5" name="LoadingProgressBar.xml" path="/Base/"/>
+  </resources>
+  <publish name="Model" path="F:\DukeChiangGit\ET\Unity\Assets\Resources\FUI" genCode="true" rotation="true" extractAlpha="true"/>
+</packageDescription>

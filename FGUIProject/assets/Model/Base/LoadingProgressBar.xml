@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="71,22" extention="ProgressBar">
+  <displayList>
+    <image id="n0_n8hd" name="bg" src="n8hd2" fileName="Res/ui_model_bg_jindutiao.png" xy="0,0" size="71,22">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_n8hd" name="bar" src="n8hd3" fileName="Res/ui_model_process_jindutiao.png" xy="3,-4" size="71,30"/>
+  </displayList>
+  <ProgressBar/>
+</component>
