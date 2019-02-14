@@ -8,7 +8,7 @@ namespace ETHotfix
     {
         public static BehaviorTree Create(string name)
         {
-            string path = $"../BehaviorDesigner/{name}.json";
+            string path = $"../Config/BehaviorDesigner/{name}.json";
 
             try
             {
