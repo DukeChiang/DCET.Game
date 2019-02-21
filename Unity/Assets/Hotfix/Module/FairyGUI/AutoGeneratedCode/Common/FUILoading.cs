@@ -86,7 +86,9 @@ namespace ETHotfix.Common
 				return;
 			}
 			
-			GObject = go;			
+			GObject = go;	
+
+			Name = Id.ToString();
 			
 			self = (GComponent)go;
 			
