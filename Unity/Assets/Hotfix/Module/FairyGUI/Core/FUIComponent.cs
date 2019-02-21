@@ -44,9 +44,8 @@ namespace ETHotfix
 		
 		public FUI Get(string name)
 		{
-			FUI ui = Root.Get(name);
-			return ui;
-		}
+			return Root.Get(name);
+        }
 
         public FUI[] GetAll()
         {
