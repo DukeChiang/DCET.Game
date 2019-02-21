@@ -1,4 +1,5 @@
 ﻿using FairyGUI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -14,26 +15,87 @@ namespace ETModel
 	}
 	
 	public sealed class FUI: Entity
-	{
-		public GObject GObject;
-		
-		public Dictionary<long, FUI> children = new Dictionary<long, FUI>();
+    {
+        public GObject GObject;
 
-		public string Name
-		{
-			get
-			{
-				return GObject?.displayObject?.name;
-			}
-		}
+        public string Name
+        {
+            get
+            {
+                if (GObject == null || GObject.displayObject == null)
+                {
+                    return string.Empty;
+                }
 
-		public bool IsWindow
-		{
-			get
-			{
-				return GObject is GWindow;
-			}
-		}
+                return GObject.displayObject.name;
+            }
+
+            set
+            {
+                if (GObject == null || GObject.displayObject == null)
+                {
+                    return;
+                }
+
+                GObject.displayObject.name = value;
+            }
+        }
+
+        public bool Visible
+        {
+            get
+            {
+                if (GObject == null)
+                {
+                    return false;
+                }
+
+                return GObject.visible;
+            }
+            set
+            {
+                if (GObject == null)
+                {
+                    return;
+                }
+
+                GObject.visible = value;
+            }
+        }
+
+        public bool IsWindow
+        {
+            get
+            {
+                return GObject is GWindow;
+            }
+        }
+
+        public bool IsComponent
+        {
+            get
+            {
+                return GObject is GComponent;
+            }
+        }
+
+        public bool IsRoot
+        {
+            get
+            {
+                return GObject is GRoot;
+            }
+        }
+
+        public bool IsEmpty
+        {
+            get
+            {
+                return GObject == null;
+            }
+        }
+
+        private Dictionary<string, FUI> children = new Dictionary<string, FUI>();
 
         public override void Dispose()
         {
@@ -45,7 +107,7 @@ namespace ETModel
             base.Dispose();
 
             // 从父亲中删除自己
-            GetParent<FUI>()?.RemoveNoDispose(Id);
+            GetParent<FUI>()?.RemoveNoDispose(Name);
 
             // 删除所有的孩子
             foreach (FUI ui in children.Values.ToList())
@@ -66,25 +128,39 @@ namespace ETModel
 
         public void Add(FUI ui)
         {
-            if (ui != null && ui.GObject != null && GObject is GComponent)
+            if (ui == null || ui.IsEmpty)
             {
-                children.Add(ui.Id, ui);
-
-                (GObject as GComponent).AddChild(ui.GObject);
-
-                ui.Parent = this;
+                throw new Exception($"ui can not be empty");
             }
+
+            if (string.IsNullOrWhiteSpace(ui.Name))
+            {
+                throw new Exception($"ui.Name can not be empty");
+            }
+
+            if (!IsComponent)
+            {
+                throw new Exception($"this must be GComponent");
+            }
+
+            if (children.ContainsKey(ui.Name))
+            {
+                throw new Exception($"ui.Name({ui.Name}) already exist");
+            }
+
+            children.Add(ui.Name, ui);
+
+            GObject.asCom.AddChild(ui.GObject);
+
+            ui.Parent = this;
         }
 
         public void MakeFullScreen()
         {
-            if (GObject != null && GObject is GComponent)
-            {
-                (GObject as GComponent).MakeFullScreen();
-            }
+            GObject?.asCom?.MakeFullScreen();
         }
 
-        public void Remove(long id)
+        public void Remove(string name)
         {
             if (IsDisposed)
             {
@@ -93,17 +169,17 @@ namespace ETModel
 
             FUI ui;
 
-            if (children.TryGetValue(id, out ui))
+            if (children.TryGetValue(name, out ui))
             {
-                children.Remove(id);
-
-                if (ui != null && GObject is GComponent)
-                {
-                    (GObject as GComponent).RemoveChild(ui.GObject, false);
-                }
+                children.Remove(name);
 
                 if (ui != null)
                 {
+                    if (IsComponent)
+                    {
+                        GObject.asCom.RemoveChild(ui.GObject, false);
+                    }
+
                     ui.Parent = null;
                     ui.Dispose();
                 }
@@ -113,7 +189,7 @@ namespace ETModel
         /// <summary>
         /// 一般情况不要使用此方法，如需使用，需要自行管理返回值的FUI的释放。
         /// </summary>
-        public FUI RemoveNoDispose(long id)
+        public FUI RemoveNoDispose(string name)
         {
             if (IsDisposed)
             {
@@ -122,16 +198,17 @@ namespace ETModel
 
             FUI ui;
 
-            if (children.TryGetValue(id, out ui))
+            if (children.TryGetValue(name, out ui))
             {
-                children.Remove(id);
+                children.Remove(name);
 
                 if (ui != null)
                 {
-                    if (GObject is GComponent)
+                    if (IsComponent)
                     {
-                        (GObject as GComponent).RemoveChild(ui.GObject, false);
+                        GObject.asCom.RemoveChild(ui.GObject, false);
                     }
+
                     ui.Parent = null;
                 }
             }
@@ -140,65 +217,59 @@ namespace ETModel
         }
 
         public void RemoveChildren()
+        {
+            foreach (var child in children.Values.ToArray())
+            {
+                child.Dispose();
+            }
+
+            children.Clear();
+        }
+
+        public FUI Get(string name)
+        {
+            FUI child;
+
+            if (children.TryGetValue(name, out child))
+            {
+                return child;
+            }
+
+            return null;
+        }
+
+        public FUI[] GetAll()
+        {
+            return children.Values.ToArray();
+        }
+
+        public void Show()
 		{
-			foreach (var child in children.Values.ToArray())
-			{
-				child.Dispose();
-			}
-			children.Clear();
-		}
-
-		public FUI Get(long id)
-		{
-			FUI child;
-
-			if (children.TryGetValue(id, out child))
-			{
-				return child;
-			}
-
-			return null;
-		}
-
-		public bool Visible
-		{
-			get
-			{
-				return GObject.visible;
-			}
-			set
-			{
-				GObject.visible = value;
-			}
-		}
-
-		public void Show()
-		{
-			if (GObject.visible)
+			if (Visible)
 			{
 				return;
 			}
 
-			GObject.visible = true;
+			Visible = true;
 
-			if (GObject is GWindow)
-			{
-                (GObject as GWindow).Show();
+            if (IsWindow)
+            {
+                GObject.asGWindow().Show();
 			}
 		}
 
 		public void Hide()
 		{
-			if (!GObject.visible)
+			if (!Visible)
 			{
 				return;
 			}
 
-			GObject.visible = true;
+			Visible = true;
 
-			if (GObject is GWindow)
+			if (IsWindow)
 			{
-                (GObject as GWindow).Hide();
+                GObject.asGWindow().Hide();
 			}
 		}
 	}

@@ -1,10 +1,9 @@
 ﻿using ETModel;
 using FairyGUI;
-using System.Collections.Generic;
 
 namespace ETHotfix
 {
-	[ObjectSystem]
+    [ObjectSystem]
 	public class FUIComponentAwakeSystem : AwakeSystem<FUIComponent>
 	{
 		public override void Awake(FUIComponent self)
@@ -38,20 +37,20 @@ namespace ETHotfix
 			Root.Add(ui);
 		}
 		
-		public void Remove(long id)
+		public void Remove(string name)
 		{
-			Root.Remove(id);
+			Root.Remove(name);
 		}
 		
-		public FUI Get(long id)
+		public FUI Get(string name)
 		{
-			FUI ui = Root.Get(id);
+			FUI ui = Root.Get(name);
 			return ui;
 		}
 
-        public List<T> GetAll<T>() where T : FUI
+        public FUI[] GetAll()
         {
-            return Root.GetAll<T>();
+            return Root.GetAll();
         }
 	}
 }

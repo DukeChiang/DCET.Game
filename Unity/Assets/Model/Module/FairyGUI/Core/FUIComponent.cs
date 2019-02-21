@@ -37,12 +37,12 @@ namespace ETModel
 			Root.Add(ui);
 		}
 		
-		public void Remove(long name)
+		public void Remove(string name)
 		{
 			Root.Remove(name);
 		}
 		
-		public FUI Get(long name)
+		public FUI Get(string name)
 		{
 			FUI ui = Root.Get(name);
 			return ui;
