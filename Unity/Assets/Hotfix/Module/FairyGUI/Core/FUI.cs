@@ -23,22 +23,22 @@ namespace ETHotfix
         {
             get
             {
-                if(GObject == null || GObject.displayObject == null)
+                if(GObject == null)
                 {
                     return string.Empty;
                 }
 
-                return GObject.displayObject.name;
+                return GObject.name;
             }
 
             set
             {
-                if (GObject == null || GObject.displayObject == null)
+                if (GObject == null)
                 {
                     return;
                 }
 
-                GObject.displayObject.name = value;
+                GObject.name = value;
             }
         }
         
@@ -113,7 +113,7 @@ namespace ETHotfix
 			GetParent<FUI>()?.RemoveNoDispose(Name);
 
 			// 删除所有的孩子
-			foreach (FUI ui in children.Values.ToList())
+			foreach (FUI ui in children.Values.ToArray())
 			{
 				ui.Dispose();
 			}

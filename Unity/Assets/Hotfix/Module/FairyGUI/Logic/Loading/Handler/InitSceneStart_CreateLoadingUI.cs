@@ -9,7 +9,7 @@ namespace ETHotfix
         public override void Run()
         {
             var fui = FUILoading.CreateInstance();
-            fui.Name = "loading";
+            fui.Name = FUILoading.UIResName;
             fui.MakeFullScreen();
             Game.Scene.GetComponent<FUIComponent>().Add(fui);
         }
