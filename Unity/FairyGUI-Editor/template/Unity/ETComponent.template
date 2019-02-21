@@ -83,8 +83,11 @@ namespace {packageName}
 			}
 			
 			GObject = go;	
-
-			Name = Id.ToString();
+			
+			if (string.IsNullOrWhiteSpace(Name))
+            {
+				Name = Id.ToString();
+            }
 			
 			self = ({componentName})go;
 			

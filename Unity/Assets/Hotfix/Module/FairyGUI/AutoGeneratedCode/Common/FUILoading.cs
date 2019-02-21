@@ -87,8 +87,11 @@ namespace ETHotfix.Common
 			}
 			
 			GObject = go;	
-
-			Name = Id.ToString();
+			
+			if (string.IsNullOrWhiteSpace(Name))
+            {
+				Name = Id.ToString();
+            }
 			
 			self = (GComponent)go;
 			
