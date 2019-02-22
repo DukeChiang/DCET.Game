@@ -1,7 +1,8 @@
 namespace ETHotfix
 {
-	public static partial class FGUIPackage
+	public static partial class FUIPackage
 	{
-		public static string {thisPackageName} = "{uiPkgName}";
+		public const string {thisPackageName} = "{uiPkgName}";
+{urls}
 	}
 }
