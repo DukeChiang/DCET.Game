@@ -7,7 +7,7 @@ namespace ETHotfix
     {
         public async Task Init()
         {
-            await ETModel.Game.Scene.GetComponent<FUIPackageComponent>().AddPackageAsync(FGUIPackage.Common);
+            await ETModel.Game.Scene.GetComponent<FUIPackageComponent>().AddPackageAsync(FUIPackage.Common);
         }
 
         public override void Dispose()
@@ -19,7 +19,7 @@ namespace ETHotfix
 
 			base.Dispose();
 
-            ETModel.Game.Scene.GetComponent<FUIPackageComponent>().RemovePackage(FGUIPackage.Common);
+            ETModel.Game.Scene.GetComponent<FUIPackageComponent>().RemovePackage(FUIPackage.Common);
         }
     }
 }

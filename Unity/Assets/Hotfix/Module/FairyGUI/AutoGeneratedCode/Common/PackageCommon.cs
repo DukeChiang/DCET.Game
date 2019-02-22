@@ -2,7 +2,7 @@
 
 namespace ETHotfix
 {
-	public static partial class FGUIPackage
+	public static partial class FUIPackage
 	{
 		public const string Common = "Common";
 		public const string Common_LoadingProgressBar = "ui://Common/LoadingProgressBar";
