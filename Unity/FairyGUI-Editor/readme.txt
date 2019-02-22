@@ -1,3 +1,8 @@
+v1.0.5
+1.插件新增资源url自动生成代码功能。
+2.修改ETComponent.template模板，增加FUI.Name默认名为空时设为Id，方便查询。
+3.修改ETPackage.template模板，将FGUIPackage改成FUIPackage，增加资源url生成模板。
+
 v1.0.4
 1.为所有自定义组件缓存与GObject的映射，自动生成的代码会管理他们的Add和Remove，通过GObject.Get<T>()获取。
 2.配合FGUI的Pool机制，设计了自定义组件的GetFromPool()方法。使用GetFromPool()获取/创建，Dispose回收，在创建之后也可以使用GObject.Get<T>()获取，注意应该在GetPool 和 ToPool之间使用GetFromPool() 和 Dispose操作。
