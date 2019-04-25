@@ -277,10 +277,6 @@ public class ExcelExporterEditor : EditorWindow
 				}
 
 				string fieldValue = GetCellString(row, j);
-				if (fieldValue == "")
-				{
-					throw new Exception($"sheet: {sheet.SheetName} 中有空白字段 {i},{j}");
-				}
 
 				if (j > 2)
 				{
@@ -316,18 +312,18 @@ public class ExcelExporterEditor : EditorWindow
 			case "int[]":
 			case "int32[]":
 			case "long[]":
-				return $"[{value}]";
+				return string.IsNullOrWhiteSpace(value) ? $"[]" : $"[{value}]";
 			case "string[]":
-				return $"[{value}]";
+				return string.IsNullOrWhiteSpace(value) ? $"[]" : $"[{value}]";
 			case "int":
 			case "int32":
 			case "int64":
 			case "long":
 			case "float":
 			case "double":
-				return value;
+				return string.IsNullOrWhiteSpace(value) ? $"0" : value;
 			case "string":
-				return $"\"{value}\"";
+				return string.IsNullOrWhiteSpace(value) ? $"\"\"" : $"\"{value}\"";
 			default:
 				throw new Exception($"不支持此类型: {type}");
 		}

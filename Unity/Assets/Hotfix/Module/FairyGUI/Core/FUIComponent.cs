@@ -32,24 +32,37 @@ namespace ETHotfix
             Root = null;
 		}
 
-		public void Add(FUI ui)
+		public void Add(FUI ui, bool asChildGObject)
 		{
-			Root.Add(ui);
+			Root?.Add(ui, asChildGObject);
 		}
 		
 		public void Remove(string name)
 		{
-			Root.Remove(name);
+			Root?.Remove(name);
 		}
 		
 		public FUI Get(string name)
 		{
-			return Root.Get(name);
+			return Root?.Get(name);
         }
 
         public FUI[] GetAll()
         {
-            return Root.GetAll();
+            return Root?.GetAll();
+        }
+
+        public void Clear()
+        {
+            var childrens = GetAll();
+
+            if(childrens != null)
+            {
+                foreach (var fui in childrens)
+                {
+                    Remove(fui.Name);
+                }
+            }
         }
 	}
 }

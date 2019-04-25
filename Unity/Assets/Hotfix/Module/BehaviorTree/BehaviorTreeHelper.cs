@@ -1,29 +1,41 @@
 ﻿using BehaviorDesigner.Runtime;
-using ETModel;
 using UnityEngine;
 
 namespace ETHotfix
 {
     public class BehaviorTreeHelper
     {
-        public static void Init(GameObject go)
+        public static void Init(UnityEngine.Object _object)
         {
-            if (go)
+            if(_object is GameObject)
             {
-                var bts = go.GetComponentsInChildren<BehaviorTree>();
+                var go = _object as GameObject;
 
-                if(bts != null)
+                if (go)
                 {
-                    foreach(var bt in bts)
+                    var bts = go.GetComponentsInChildren<BehaviorDesigner.Runtime.BehaviorTree>();
+
+                    if (bts != null)
                     {
-                        if (bt)
+                        foreach (var bt in bts)
                         {
-                            bt.CheckForSerialization();
-                            bt.gameObject?.Ensure<BehaviorTreeTasks>()?.Init();
+                            if (bt)
+                            {
+                                bt.gameObject.Ensure<BehaviorTreeController>().Init();
+                            }
                         }
                     }
                 }
             }
+            else if(_object is ExternalBehavior)
+            {
+                var externalBehavior = _object as ExternalBehavior;
+
+                if (externalBehavior)
+                {
+                    externalBehavior.Init();
+                }
+            }            
         }
     }
 }

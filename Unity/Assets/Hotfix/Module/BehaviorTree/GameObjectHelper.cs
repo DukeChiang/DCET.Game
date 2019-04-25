@@ -6,14 +6,29 @@ namespace ETHotfix
     {
         public static T Ensure<T>(this GameObject gameObject) where T : UnityEngine.Component
         {
-            var t = gameObject.GetComponent<T>();
-
-            if (!t)
+            if (gameObject)
             {
-                t = gameObject.AddComponent<T>();
+                var t = gameObject.GetComponent<T>();
+
+                if (!t)
+                {
+                    t = gameObject.AddComponent<T>();
+                }
+
+                return t;
             }
 
-            return t;
+            return null;
+        }
+
+        public static T Ensure<T>(this UnityEngine.Component component) where T : UnityEngine.Component
+        {
+            if (component)
+            {
+                return Ensure<T>(component.gameObject);
+            }
+
+            return null;
         }
     }
 }

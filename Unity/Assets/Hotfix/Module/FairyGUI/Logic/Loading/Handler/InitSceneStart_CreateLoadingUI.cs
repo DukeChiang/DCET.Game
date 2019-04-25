@@ -14,7 +14,7 @@ namespace ETHotfix
             fui.Name = FUILoading.UIResName;
 
             fui.MakeFullScreen();
-            Game.Scene.GetComponent<FUIComponent>().Add(fui);
+            Game.Scene.GetComponent<FUIComponent>().Add(fui, true);
         }
     }
 }

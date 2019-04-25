@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Linq;
 using ETModel;
 using UnityEditor;
 
@@ -9,9 +10,10 @@ namespace ETEditor
 		private const string relativeDirPrefix = "../Release";
 
 		public static string BuildFolder = "../Release/{0}/StreamingAssets/";
-		
-		//[MenuItem("Tools/编译Hotfix")]
-		public static void BuildHotfix()
+        public static string BuildFile = "StreamingAssets";
+
+        //[MenuItem("Tools/编译Hotfix")]
+        public static void BuildHotfix()
 		{
 			System.Diagnostics.Process process = new System.Diagnostics.Process();
 			string unityDir = System.Environment.GetEnvironmentVariable("Unity");
@@ -115,11 +117,27 @@ namespace ETEditor
 
 		private static void GenerateVersionProto(string dir, VersionConfig versionProto, string relativePath)
 		{
-			foreach (string file in Directory.GetFiles(dir))
+            var abNames = AssetDatabase.GetAllAssetBundleNames()?.ToList();
+
+            foreach (string file in Directory.GetFiles(dir))
 			{
-				string md5 = MD5Helper.FileMD5(file);
 				FileInfo fi = new FileInfo(file);
-				long size = fi.Length;
+                var fileName = fi.Name;
+                var manifestEx = ".manifest";
+
+                if (string.Equals(fi.Extension, manifestEx))
+                {
+                    fileName = fi.Name.Substring(0, fi.Name.Length - manifestEx.Length);
+                }
+
+                if(!string.Equals(fileName, BuildFile) && (abNames == null || !abNames.Contains(fileName)))
+                {
+                    fi.Delete();
+                    continue;
+                }
+
+                string md5 = MD5Helper.FileMD5(file);
+                long size = fi.Length;
 				string filePath = relativePath == "" ? fi.Name : $"{relativePath}/{fi.Name}";
 
 				versionProto.FileInfoDict.Add(filePath, new FileVersionInfo

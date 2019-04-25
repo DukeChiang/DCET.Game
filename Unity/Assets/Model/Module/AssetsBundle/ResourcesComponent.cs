@@ -53,19 +53,21 @@ namespace ETModel
 			this.AssetBundle?.Unload(true);
 		}
 	}
-	
+
 	// 用于字符串转换，减少GC
 	public static class AssetBundleHelper
 	{
+		public const string Unity3dEx = ".unity3d";
+
 		public static readonly Dictionary<int, string> IntToStringDict = new Dictionary<int, string>();
-		
+
 		public static readonly Dictionary<string, string> StringToABDict = new Dictionary<string, string>();
 
-		public static readonly Dictionary<string, string> BundleNameToLowerDict = new Dictionary<string, string>() 
-		{
-			{ "StreamingAssets", "StreamingAssets" }
-		};
-		
+		public static readonly Dictionary<string, string> BundleNameToLowerDict = new Dictionary<string, string>()
+{
+{ "StreamingAssets", "StreamingAssets" }
+};
+
 		// 缓存包依赖，不用每次计算
 		public static Dictionary<string, string[]> DependenciesCache = new Dictionary<string, string[]>();
 
@@ -81,7 +83,7 @@ namespace ETModel
 			IntToStringDict[value] = result;
 			return result;
 		}
-		
+
 		public static string StringToAB(this string value)
 		{
 			string result;
@@ -90,7 +92,7 @@ namespace ETModel
 				return result;
 			}
 
-			result = value + ".unity3d";
+			result = value + Unity3dEx;
 			StringToABDict[value] = result;
 			return result;
 		}
@@ -99,7 +101,7 @@ namespace ETModel
 		{
 			return value.IntToString().StringToAB();
 		}
-		
+
 		public static string BundleNameToLower(this string value)
 		{
 			string result;
@@ -112,11 +114,11 @@ namespace ETModel
 			BundleNameToLowerDict[value] = result;
 			return result;
 		}
-		
+
 		public static string[] GetDependencies(string assetBundleName)
 		{
 			string[] dependencies = new string[0];
-			if (DependenciesCache.TryGetValue(assetBundleName,out dependencies))
+			if (DependenciesCache.TryGetValue(assetBundleName, out dependencies))
 			{
 				return dependencies;
 			}
@@ -139,23 +141,35 @@ namespace ETModel
 			Dictionary<string, int> info = new Dictionary<string, int>();
 			List<string> parents = new List<string>();
 			CollectDependencies(parents, assetBundleName, info);
-			string[] ss = info.OrderBy(x => x.Value).Select(x => x.Key).ToArray();
+			string[] ss = info.OrderBy(Order).Select(x => x.Key).ToArray();
 			return ss;
+		}
+
+		private static int Order(KeyValuePair<string, int> item)
+		{
+			if (ResourcesComponent.IsStaticBundle(item.Key))
+			{
+				return -1;
+			}
+
+			return item.Value;
 		}
 
 		public static void CollectDependencies(List<string> parents, string assetBundleName, Dictionary<string, int> info)
 		{
 			parents.Add(assetBundleName);
+
 			string[] deps = GetDependencies(assetBundleName);
+
 			foreach (string parent in parents)
 			{
 				if (!info.ContainsKey(parent))
 				{
 					info[parent] = 0;
 				}
+
 				info[parent] += deps.Length;
 			}
-
 
 			foreach (string dep in deps)
 			{
@@ -163,20 +177,28 @@ namespace ETModel
 				{
 					throw new Exception($"包有循环依赖，请重新标记: {assetBundleName} {dep}");
 				}
+
 				CollectDependencies(parents, dep, info);
 			}
+
 			parents.RemoveAt(parents.Count - 1);
 		}
 	}
-	
 
 	public class ResourcesComponent : Component
 	{
+		public static string[] staticBundleExtensionNames = { "shader.unity3d", "compute.unity3d", "hlsl.unity3d" };
+
 		public static AssetBundleManifest AssetBundleManifestObject { get; set; }
 
 		private readonly Dictionary<string, Dictionary<string, UnityEngine.Object>> resourceCache = new Dictionary<string, Dictionary<string, UnityEngine.Object>>();
 
 		private readonly Dictionary<string, ABInfo> bundles = new Dictionary<string, ABInfo>();
+
+		/// <summary>
+		/// 只加载不卸载的Bundle(比如shader相关，加载后又卸载会造成丢失引用)
+		/// </summary>
+		private static readonly Dictionary<string, AssetBundle> staticBundles = new Dictionary<string, AssetBundle>();
 
 		public override void Dispose()
 		{
@@ -189,7 +211,7 @@ namespace ETModel
 
 			foreach (var abInfo in this.bundles)
 			{
-				abInfo.Value?.AssetBundle?.Unload(true);
+				abInfo.Value?.Dispose();
 			}
 
 			this.bundles.Clear();
@@ -213,9 +235,19 @@ namespace ETModel
 			return resource;
 		}
 
+		public AssetBundle GetAssetBundle(string abName)
+		{
+			ABInfo abInfo;
+			if (!this.bundles.TryGetValue(abName.BundleNameToLower(), out abInfo))
+			{
+				throw new Exception($"not found bundle: {abName}");
+			}
+			return abInfo.AssetBundle;
+		}
+
 		public void UnloadBundle(string assetBundleName)
 		{
-			assetBundleName = assetBundleName.ToLower();
+			assetBundleName = assetBundleName.BundleNameToLower();
 
 			string[] dependencies = AssetBundleHelper.GetSortedDependencies(assetBundleName);
 
@@ -228,25 +260,31 @@ namespace ETModel
 
 		private void UnloadOneBundle(string assetBundleName)
 		{
-			assetBundleName = assetBundleName.ToLower();
+			assetBundleName = assetBundleName.BundleNameToLower();
+
+			if (IsStaticBundle(assetBundleName))
+			{
+				return;
+			}
 
 			ABInfo abInfo;
 			if (!this.bundles.TryGetValue(assetBundleName, out abInfo))
 			{
 				throw new Exception($"not found assetBundle: {assetBundleName}");
 			}
-			
+
 			//Log.Debug($"---------- unload one bundle {assetBundleName} refcount: {abInfo.RefCount - 1}");
 
 			--abInfo.RefCount;
-            
+
 			if (abInfo.RefCount > 0)
 			{
 				return;
 			}
 
-
 			this.bundles.Remove(assetBundleName);
+			this.resourceCache.Remove(assetBundleName);
+
 			abInfo.Dispose();
 			//Log.Debug($"cache count: {this.cacheDictionary.Count}");
 		}
@@ -258,7 +296,7 @@ namespace ETModel
 		/// <returns></returns>
 		public void LoadBundle(string assetBundleName)
 		{
-			assetBundleName = assetBundleName.ToLower();
+			assetBundleName = assetBundleName.BundleNameToLower();
 			string[] dependencies = AssetBundleHelper.GetSortedDependencies(assetBundleName);
 			//Log.Debug($"-----------dep load {assetBundleName} dep: {dependencies.ToList().ListToString()}");
 			foreach (string dependency in dependencies)
@@ -269,7 +307,7 @@ namespace ETModel
 				}
 				this.LoadOneBundle(dependency);
 			}
-        }
+		}
 
 		public void AddResource(string bundleName, string assetName, UnityEngine.Object resource)
 		{
@@ -285,6 +323,13 @@ namespace ETModel
 
 		public void LoadOneBundle(string assetBundleName)
 		{
+			assetBundleName = assetBundleName.BundleNameToLower();
+
+			if (staticBundles.ContainsKey(assetBundleName))
+			{
+				return;
+			}
+
 			//Log.Debug($"---------------load one bundle {assetBundleName}");
 			ABInfo abInfo;
 			if (this.bundles.TryGetValue(assetBundleName, out abInfo))
@@ -337,7 +382,14 @@ namespace ETModel
 				}
 			}
 
-			this.bundles[assetBundleName] = new ABInfo(assetBundleName, assetBundle);
+			if (IsStaticBundle(assetBundleName))
+			{
+				staticBundles[assetBundleName] = assetBundle;
+			}
+			else
+			{
+				this.bundles[assetBundleName] = new ABInfo(assetBundleName, assetBundle);
+			}
 		}
 
 		/// <summary>
@@ -347,10 +399,10 @@ namespace ETModel
 		/// <returns></returns>
 		public async Task LoadBundleAsync(string assetBundleName)
 		{
-            assetBundleName = assetBundleName.ToLower();
+			assetBundleName = assetBundleName.BundleNameToLower();
 			string[] dependencies = AssetBundleHelper.GetSortedDependencies(assetBundleName);
-            // Log.Debug($"-----------dep load {assetBundleName} dep: {dependencies.ToList().ListToString()}");
-            foreach (string dependency in dependencies)
+			// Log.Debug($"-----------dep load {assetBundleName} dep: {dependencies.ToList().ListToString()}");
+			foreach (string dependency in dependencies)
 			{
 				if (string.IsNullOrEmpty(dependency))
 				{
@@ -358,10 +410,17 @@ namespace ETModel
 				}
 				await this.LoadOneBundleAsync(dependency);
 			}
-        }
+		}
 
 		public async Task LoadOneBundleAsync(string assetBundleName)
 		{
+			assetBundleName = assetBundleName.BundleNameToLower();
+
+			if (staticBundles.ContainsKey(assetBundleName))
+			{
+				return;
+			}
+
 			ABInfo abInfo;
 			if (this.bundles.TryGetValue(assetBundleName, out abInfo))
 			{
@@ -369,8 +428,8 @@ namespace ETModel
 				return;
 			}
 
-            //Log.Debug($"---------------load one bundle {assetBundleName}");
-            if (!Define.IsAsync)
+			//Log.Debug($"---------------load one bundle {assetBundleName}");
+			if (!Define.IsAsync)
 			{
 				string[] realPath = null;
 #if UNITY_EDITOR
@@ -393,7 +452,7 @@ namespace ETModel
 			{
 				p = Path.Combine(PathHelper.AppResPath, assetBundleName);
 			}
-			
+
 			using (AssetsBundleLoaderAsync assetsBundleLoaderAsync = ComponentFactory.Create<AssetsBundleLoaderAsync>())
 			{
 				assetBundle = await assetsBundleLoaderAsync.LoadAsync(p);
@@ -418,7 +477,30 @@ namespace ETModel
 				}
 			}
 
-			this.bundles[assetBundleName] = new ABInfo(assetBundleName, assetBundle);
+			if (IsStaticBundle(assetBundleName))
+			{
+				staticBundles[assetBundleName] = assetBundle;
+			}
+			else
+			{
+				this.bundles[assetBundleName] = new ABInfo(assetBundleName, assetBundle);
+			}
+		}
+
+		public static bool IsStaticBundle(string assetBundleName)
+		{
+			if (staticBundleExtensionNames != null && !string.IsNullOrWhiteSpace(assetBundleName))
+			{
+				foreach (var item in staticBundleExtensionNames)
+				{
+					if (assetBundleName.EndsWith(item))
+					{
+						return true;
+					}
+				}
+			}
+
+			return false;
 		}
 
 		public string DebugString()

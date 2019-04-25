@@ -3,11 +3,9 @@
     "references": [
         "Unity.Model",
         "Unity.ThirdParty",
-        "BehaviorDesigner.Runtime",
+        "Unity.BehaviorDesigner.Runtime",
         "Unity.FairyGUI.Runtime"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": []
 }

@@ -6,25 +6,33 @@ using System.Collections.Generic;
 namespace ETHotfix
 {
     [ObjectSystem]
-    public class BehaviorTreeComponentAwakeSystem : AwakeSystem<BehaviorTreeComponent, BehaviorTree>
+    public class BehaviorTreeComponentAwakeSystem : AwakeSystem<BehaviorTreeComponent>
     {
-        public override void Awake(BehaviorTreeComponent self, BehaviorTree behaviorTree)
+        public override void Awake(BehaviorTreeComponent self)
         {
-            self.Awake(behaviorTree);
+            self.Awake();
         }
     }
 
     public class BehaviorTreeComponent : Component
     {
-        private BehaviorTree behaviorTree;
         private Dictionary<HotfixAction, Component> behaviorTreeActionComponents = new Dictionary<HotfixAction, Component>();
         private Dictionary<HotfixComposite, Component> behaviorTreeCompositeComponents = new Dictionary<HotfixComposite, Component>();
         private Dictionary<HotfixConditional, Component> behaviorTreeConditionalComponents = new Dictionary<HotfixConditional, Component>();
         private Dictionary<HotfixDecorator, Component> behaviorTreeDecoratorComponents = new Dictionary<HotfixDecorator, Component>();
 
-        public void Awake(BehaviorTree behaviorTree)
+        public void Awake()
         {
-            if(behaviorTree == null)
+            var behavior = GetParent<BehaviorTree>();
+
+            if (behavior.IsEmptyOrDisposed())
+            {
+                return;
+            }
+
+            var behaviorTree = behavior.Behavior;
+
+            if (!behaviorTree)
             {
                 return;
             }
@@ -32,25 +40,23 @@ namespace ETHotfix
             behaviorTree.StartWhenEnabled = false;
             behaviorTree.ResetValuesOnRestart = false;
 
-            this.behaviorTree = behaviorTree;
+            var behaviorTreeController = behaviorTree.Ensure<BehaviorTreeController>();
 
-            var tasks = behaviorTree.gameObject.Ensure<BehaviorTreeTasks>();
+            behaviorTreeController.Init();
 
-            tasks.Init();
-
-            BindHotfixActions(tasks);
-            BindHotfixComposites(tasks);
-            BindHotfixConditionals(tasks);
-            BindHotfixDecorators(tasks);
+            BindHotfixActions(behaviorTreeController, behavior.Entity);
+            BindHotfixComposites(behaviorTreeController, behavior.Entity);
+            BindHotfixConditionals(behaviorTreeController, behavior.Entity);
+            BindHotfixDecorators(behaviorTreeController, behavior.Entity);
 
             behaviorTree.EnableBehavior();
         }
 
-        private void BindHotfixActions(BehaviorTreeTasks tasks)
+        private void BindHotfixActions(BehaviorTreeController tasks, Entity parent)
         {
             foreach (var hotfixAction in tasks.hotfixActions)
             {
-                var component = BehaviorTreeComponentFactory.Create(GetParent<Entity>(), hotfixAction);
+                var component = BehaviorTreeFactory.Create(parent, hotfixAction);
 
                 if (component != null)
                 {
@@ -59,11 +65,11 @@ namespace ETHotfix
             }
         }
 
-        private void BindHotfixComposites(BehaviorTreeTasks tasks)
+        private void BindHotfixComposites(BehaviorTreeController tasks, Entity parent)
         {
             foreach (var hotfixComposite in tasks.hotfixComposites)
             {
-                var component = BehaviorTreeComponentFactory.Create(GetParent<Entity>(), hotfixComposite);
+                var component = BehaviorTreeFactory.Create(parent, hotfixComposite);
 
                 if (component != null)
                 {
@@ -72,11 +78,11 @@ namespace ETHotfix
             }
         }
 
-        private void BindHotfixConditionals(BehaviorTreeTasks tasks)
+        private void BindHotfixConditionals(BehaviorTreeController tasks, Entity parent)
         {
             foreach (var hotfixConditional in tasks.hotfixConditionals)
             {
-                var component = BehaviorTreeComponentFactory.Create(GetParent<Entity>(), hotfixConditional);
+                var component = BehaviorTreeFactory.Create(parent, hotfixConditional);
 
                 if (component != null)
                 {
@@ -85,27 +91,17 @@ namespace ETHotfix
             }
         }
 
-        private void BindHotfixDecorators(BehaviorTreeTasks tasks)
+        private void BindHotfixDecorators(BehaviorTreeController tasks, Entity parent)
         {
             foreach (var hotfixDecorator in tasks.hotfixDecorators)
             {
-                var component = BehaviorTreeComponentFactory.Create(GetParent<Entity>(), hotfixDecorator);
+                var component = BehaviorTreeFactory.Create(parent, hotfixDecorator);
 
                 if (component != null)
                 {
                     behaviorTreeDecoratorComponents.Add(hotfixDecorator, component);
                 }
             }
-        }
-
-        public void EnableBehaior()
-        {
-            behaviorTree?.EnableBehavior();
-        }
-
-        public void DisableBehavior()
-        {
-            behaviorTree?.DisableBehavior();
         }
 
         public override void Dispose()
@@ -116,8 +112,8 @@ namespace ETHotfix
             }
 
             base.Dispose();
-
-            foreach(var item in behaviorTreeActionComponents)
+            
+            foreach (var item in behaviorTreeActionComponents)
             {
                 item.Value.Dispose();
             }
@@ -144,8 +140,6 @@ namespace ETHotfix
             }
 
             behaviorTreeDecoratorComponents.Clear();
-
-            behaviorTree = null;
         }
     }
 }

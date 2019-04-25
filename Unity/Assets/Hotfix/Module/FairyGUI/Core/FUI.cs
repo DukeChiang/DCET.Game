@@ -130,7 +130,7 @@ namespace ETHotfix
             isFromFGUIPool = false;
         }
 
-		public void Add(FUI ui)
+		public void Add(FUI ui, bool asChildGObject)
 		{
             if(ui == null || ui.IsEmpty)
             {
@@ -141,12 +141,7 @@ namespace ETHotfix
             {
                 throw new Exception($"ui.Name can not be empty");
             }
-
-            if (!IsComponent)
-            {
-                throw new Exception($"this must be GComponent");
-            }
-
+            
             if (children.ContainsKey(ui.Name))
             {
                 throw new Exception($"ui.Name({ui.Name}) already exist");
@@ -154,7 +149,10 @@ namespace ETHotfix
 
             children.Add(ui.Name, ui);
 
-            GObject.asCom.AddChild(ui.GObject);
+            if (IsComponent && asChildGObject)
+            {
+                GObject.asCom.AddChild(ui.GObject);
+            }
 
             ui.Parent = this;
         }

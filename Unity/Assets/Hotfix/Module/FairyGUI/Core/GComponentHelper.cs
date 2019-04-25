@@ -77,7 +77,7 @@ namespace ETHotfix
 
                 for (int i = 0; i < childs.Length; ++i)
                 {
-                    if (diss < childRadiusDiss(childs[i]))
+                    if (diss <= childRadiusDiss(childs[i]))
                     {
                         diss = childRadiusDiss(childs[i]);
                         maxDisschild = childs[i];
