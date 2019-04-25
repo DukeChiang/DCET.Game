@@ -1,5 +1,5 @@
 # [ET 4.0](https://github.com/egametang/ET/tree/Branch_V4.0) 
-# [ET 论坛](https://github.com/egametang/ET/tree/Branch_V4.0) 
+# [ET 论坛](https://bbs.honorworkroom.com/forum.php) 
 
 __讨论QQ群 : 474643097__
 
