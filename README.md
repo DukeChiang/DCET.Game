@@ -1,5 +1,7 @@
 # [ET 4.0](https://github.com/egametang/ET/tree/Branch_V4.0) 
 # [ET 论坛](https://bbs.honorworkroom.com/forum.php) 
+# [FGUI官网](http://www.fairygui.com/) 
+# [我的博客](https://www.dukechiang.com) 
 
 __讨论QQ群 : 474643097__
 
