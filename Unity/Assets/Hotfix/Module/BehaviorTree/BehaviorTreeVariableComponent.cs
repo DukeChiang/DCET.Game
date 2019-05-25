@@ -43,9 +43,11 @@ namespace ETHotfix
             var variables = behaviorTreeVariables[type];
 
             if (!variables.ContainsKey(name))
-            {
-                variables[name] = ComponentFactory.Create<VariableComponent<T>>();
-            }
+			{
+				var variable = ComponentFactory.Create<VariableComponent<T>>();
+				variable.Name = name;
+				variables[name] = variable;
+			}
 
             return (VariableComponent<T>)variables[name];
         }

@@ -22,8 +22,13 @@ namespace ETModel
 				{
 					continue;
 				}
-				
-				if(type == typeof(ComponentWithId) || type == typeof(Component) || type == typeof(Entity))
+
+				if (type.IsGenericType)
+				{
+					continue;
+				}
+
+				if (type == typeof(ComponentWithId) || type == typeof(Component) || type == typeof(Entity))
 				{
 					continue;
 				}

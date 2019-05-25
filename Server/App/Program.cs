@@ -92,8 +92,9 @@ namespace App
 						Game.Scene.AddComponent<ConfigComponent>();
 
                         Game.Scene.AddComponent<BehaviorManagerComponent>();
+                        Game.Scene.AddComponent<BehaviorTreeVariableComponent>();
 
-                        Game.EventSystem.Run(EventIdType.TestBehavior, "Demo");
+						Game.EventSystem.Run(EventIdType.TestBehavior, "Demo");
 
 						// Game.Scene.AddComponent<HttpComponent>();
 						break;
