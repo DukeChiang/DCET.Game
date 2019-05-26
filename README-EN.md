@@ -1,5 +1,5 @@
-# [中文](https://github.com/egametang/Egametang/blob/master/README-CN.md) 
-
+# [中文](https://github.com/DukeChiang/DCET/tree/dukechiang_Branch_V4.0/README.md) 
+[ET BBS](https://bbs.honorworkroom.com/forum.php)  [DCET](https://www.dukechiang.com)    [DCET-FGUI Guide](https://www.lfzxb.top/et_fguilearn/)   
 __Chinese Tencent QQ group : 474643097__  
 [google group](https://groups.google.com/forum/#!forum/et-game-framework) 
 
