@@ -1118,7 +1118,7 @@ namespace XLua.CSObjectWrap
                     
                         float gen_ret =
 #if UNITY_2019_1_OR_NEWER
-                        UnityEngine.Camera.FocalLengthToFOV( 
+                        UnityEngine.Camera.FocalLengthToFieldOfView( 
                         _focalLength, 
                         _sensorSize );
 #else
