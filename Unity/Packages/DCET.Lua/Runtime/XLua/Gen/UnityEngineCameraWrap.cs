@@ -276,8 +276,13 @@ namespace XLua.CSObjectWrap
 
 		    Utils.BeginClassRegister(type, L, __CreateInstance, 26, 7, 3);
 			Utils.RegisterFunc(L, Utils.CLS_IDX, "CalculateProjectionMatrixFromPhysicalProperties", _m_CalculateProjectionMatrixFromPhysicalProperties_xlua_st_);
+#if UNITY_2019_1_OR_NEWER
+            Utils.RegisterFunc(L, Utils.CLS_IDX, "FocalLengthToFieldOfView", _m_FocalLengthToFOV_xlua_st_);
+            Utils.RegisterFunc(L, Utils.CLS_IDX, "FieldOfViewToFocalLength", _m_FOVToFocalLength_xlua_st_);
+#else
             Utils.RegisterFunc(L, Utils.CLS_IDX, "FocalLengthToFOV", _m_FocalLengthToFOV_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "FOVToFocalLength", _m_FOVToFocalLength_xlua_st_);
+#endif
             Utils.RegisterFunc(L, Utils.CLS_IDX, "GetAllCameras", _m_GetAllCameras_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "SetupCurrent", _m_SetupCurrent_xlua_st_);
             
@@ -1111,9 +1116,16 @@ namespace XLua.CSObjectWrap
                     float _focalLength = (float)LuaAPI.lua_tonumber(L, 1);
                     float _sensorSize = (float)LuaAPI.lua_tonumber(L, 2);
                     
-                        float gen_ret = UnityEngine.Camera.FocalLengthToFOV( 
+                        float gen_ret =
+#if UNITY_2019_1_OR_NEWER
+                        UnityEngine.Camera.FocalLengthToFOV( 
                         _focalLength, 
                         _sensorSize );
+#else
+                        UnityEngine.Camera.FocalLengthToFOV( 
+                        _focalLength, 
+                        _sensorSize );
+#endif
                         LuaAPI.lua_pushnumber(L, gen_ret);
                     
                     
@@ -1139,9 +1151,16 @@ namespace XLua.CSObjectWrap
                     float _fov = (float)LuaAPI.lua_tonumber(L, 1);
                     float _sensorSize = (float)LuaAPI.lua_tonumber(L, 2);
                     
-                        float gen_ret = UnityEngine.Camera.FOVToFocalLength( 
+                        float gen_ret =
+#if UNITY_2019_1_OR_NEWER
+                        UnityEngine.Camera.FieldOfViewToFocalLength( 
                         _fov, 
                         _sensorSize );
+#else
+                        UnityEngine.Camera.FOVToFocalLength( 
+                        _fov, 
+                        _sensorSize );
+#endif
                         LuaAPI.lua_pushnumber(L, gen_ret);
                     
                     
