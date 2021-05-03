@@ -27,6 +27,7 @@ namespace DCETRuntime
 		private const string luaTxtExtensionName = ".lua.txt";
 		private const string luaDir = "Res/Lua/";
 		private const string luaSuffixName = "/lua";
+		private const string empty = "";
 		private const char dot = '.';
 		private const char backSlash = '/';
 		private static Lua defaultLua = null;
@@ -50,9 +51,7 @@ namespace DCETRuntime
 					}
 					else
 					{
-						//替换原来的加载函数
-						luaEnv.AddLoader(ABLuaLoader);
-						//luaEnv.AddLoader(AssetBundleLoader);
+						luaEnv.AddLoader(AssetBundleLoader);
 					}
 				}
 
@@ -96,67 +95,25 @@ namespace DCETRuntime
 
 		private static byte[] AssetBundleLoader(ref string filepath)
 		{
-			if (!string.IsNullOrWhiteSpace(filepath))
-			{
-				var splits = filepath.Split(dot);
-
-				if (splits != null)
-				{
-					var l = splits.Length;
-
-					if (filepath.EndsWith(luaExtensionName) && splits.Length > 2)
-					{
-						var textAsset = AssetBundles.Default.LoadAsset(BundleNameToLower($"{splits[0]}_lua.unity3d"), $"{splits[l - 2]}.{splits[l - 1]}");
-
-						if (textAsset != null && textAsset is TextAsset)
-						{
-							filepath = Path.Combine(Application.dataPath, luaDir + filepath.Replace(dot, backSlash).Replace(luaSuffixName, luaExtensionName) + txtExtensionName);
-
-							return (textAsset as TextAsset).bytes;
-						}
-					}
-					else if (splits.Length > 1)
-					{
-						var textAsset = AssetBundles.Default.LoadAsset(BundleNameToLower($"{splits[0]}_lua.unity3d"), $"{splits[l - 1]}{luaExtensionName}");
-
-						if (textAsset != null && textAsset is TextAsset)
-						{
-							filepath = Path.Combine(Application.dataPath, luaDir + filepath.Replace(dot, backSlash) + luaTxtExtensionName);
-
-							return (textAsset as TextAsset).bytes;
-						}
-					}
-				}
-			}
-
-			return null;
-		}
-
-
-		private static byte[] ABLuaLoader(ref string filepath)
-		{
-            Log.Debug($"加载lua文件:{filepath}");
             if (!string.IsNullOrWhiteSpace(filepath))
 			{
-				var luaFileName = filepath.Replace(luaExtensionName, "");
+				var luaFileName = filepath.Replace(luaExtensionName, empty);
 				var splits = luaFileName.Split(dot);
-				string abname = $"{splits[0]}_lua.unity3d";
-				string resname = $"{splits[splits.Length - 1]}{luaExtensionName}";
-                Log.Debug($"abname:{abname},resname:{resname}");
-				if (splits.Length == 2)
-				{
-					//1.ab文件名:{splits[0]}_lua.unity3d
-					//2.资源名  :{splits[1]}{luaExtensionName}
-				}
-				else
-				{
-					//1.ab文件名:{splits[0]}_lua.unity3d
-					//2.资源名  :{splits[0]}{luaExtensionName}
-				}
-				var textAsset = AssetBundles.Default.LoadAsset(BundleNameToLower(abname), resname);
+				string assetBundleName = $"{splits[0]}_lua.unity3d";
+				string assetName = $"{splits[splits.Length - 1]}{luaExtensionName}";
+
+				var textAsset = AssetBundles.Default.LoadAsset(BundleNameToLower(assetBundleName), assetName);
+
 				if (textAsset != null && textAsset is TextAsset)
-				{
-					//					filepath = Path.Combine(Application.dataPath, luaDir + filepath.Replace(dot, backSlash).Replace(luaSuffixName, luaExtensionName) + txtExtensionName);
+				{					
+					filepath = Path.Combine(Application.dataPath, luaDir + filepath.Replace(dot, backSlash).Replace(luaSuffixName, luaExtensionName));
+
+					if(!filepath.EndsWith(luaExtensionName)){
+						filepath += luaExtensionName;
+					}
+
+					filepath += txtExtensionName;
+
 					return (textAsset as TextAsset).bytes;
 				}
 			}

@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2018_4_12;UNITY_2018_4;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;NET452;THREAD_SAFE;XLUA;ASYNC;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2018_4_12;UNITY_2018_4;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;NET452;THREAD_SAFE;XLUA;ASYNC;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -44,1204 +44,1171 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <PropertyGroup>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>4.8.2.0</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
-    <UnityVersion>2018.4.12f1</UnityVersion>
-  </PropertyGroup>
-  <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
-      <HintPath>F:\XGY\Tools\Begins\Unity\2018.4.12f1\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+      <HintPath>F:\Program Files\Unity2018.4.12f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>F:\XGY\Tools\Begins\Unity\2018.4.12f1\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
+      <HintPath>F:\Program Files\Unity2018.4.12f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Packages\DCET.Lua\Runtime\Helper\LuaHelper.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\List.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\LuaDLL.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\LuaProfiler.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\NativeHelper.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\ObjectPool.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\Parse\Common.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\Parse\LLex.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\Parse\Parse.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\Parse\Util.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\Sample.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\LuaHookSetup.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\NetWork\NetWorkClient.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Setting\LuaDeepProfilerAssetSetting.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Setting\LuaDeepProfilerSetting.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\BuildInInit.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\AstarPathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeBehaviorTreeControllerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeBehaviorTreeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeExternalBehaviorTreeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksConditionalEvaluatorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksEntryTaskWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksHotfixActionWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksHotfixCompositeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksHotfixConditionalWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksHotfixDecoratorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksInterruptWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksInverterWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksParallelCompleteWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksParallelSelectorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksParallelWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksPrioritySelectorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksRandomSelectorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksRandomSequenceWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksRepeaterWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksReturnFailureWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksReturnSuccessWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksSelectorEvaluatorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksSelectorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksSequenceWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksTaskGuardWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksUntilFailureWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksUntilSuccessWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksUtilitySelectorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeAcceptAllCertificateWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeAssetBundleLoaderAsyncWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeAssetBundlesWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeAssetDatabaseHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeAssetLoaderAsyncWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeBundleDownloaderWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeCameraDepthTextureWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeCircularBufferWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeComponentViewWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeDefineWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeFileHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeFileVersionInfoWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeFUIPackageWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeGameLoopWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeGameObjectHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeGizmosDebugWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeGlobalConfigComponentWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeGlobalProtoWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeIStaticMethodWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeKcpWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeLocalTimeHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeLogWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeMD5HelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeMongoHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeMonoBehaviourBridgeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeMonoStaticMethodWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeOneThreadSynchronizationContextWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimePathHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimePrefabLightmapDataMeshRendererLightmapDataWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimePrefabLightmapDataTerrainLightmapDataWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimePrefabLightmapDataWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeProcessHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeReferenceCollectorDataComparerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeReferenceCollectorDataWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeReferenceCollectorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeReferenceLoaderWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeResourcesHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeStreamHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeStringHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeUnityWebRequestAsyncWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeVersionConfigWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeZipHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DelegatesGensBridge.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\EnumWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIAsyncCreationHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIBaseFontWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIBitmapFontBMGlyphWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIBitmapFontWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIBlendModeUtilsBlendFactorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIBlendModeUtilsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIBlurFilterWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUICaptureCameraWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIChangePageActionWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIColliderHitTestWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIColorFilterWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUICompositeMeshWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIContainerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIControllerActionWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIControllerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUICopyPastePatchWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIDisplayObjectInfoWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIDisplayObjectWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIDisplayOptionsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIDragDropManagerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIDynamicFontWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEllipseMeshWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEmojiWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEMRenderSupportWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEMRenderTargetWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEventContextWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEventDispatcherWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEventListenerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIFillMeshWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIFontManagerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGButtonWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGComboBoxWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGComponentWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearAnimationWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearBaseWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearColorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearDisplayWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearIconWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearLookWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearSizeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearTextWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearTweenConfigWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearXYWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGGraphWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGGroupWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGImageWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGLabelWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGListWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGLoaderWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGlyphInfoWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGMovieClipWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGObjectPoolWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGObjectWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGoWrapperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGPathPointWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGPathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGProgressBarWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGRichTextFieldWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGRootWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGScrollBarWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGSliderWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGTextFieldWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGTextInputWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGTweenerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGTweenWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIHitTestContextWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIAnimationGearWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIColorGearWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIEventDispatcherWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIFilterWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIHitTestWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIKeyboardWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIImageWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIMeshFactoryWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIInputEventWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIInputTextFieldWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIITextColorGearWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIITweenListenerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIUISourceWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUILineMeshWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUILongPressGestureWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIMarginWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIMaterialManagerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIMeshColliderHitTestWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIMovieClipFrameWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIMovieClipWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUINAudioClipWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUINGraphicsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUINMaterialWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUINTextureWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPackageItemWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPageOptionWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPinchGestureWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPixelHitTestDataWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPixelHitTestWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPlayTransitionActionWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPolygonMeshWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPopupMenuWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRectHitTestWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRectMeshWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRegularPolygonMeshWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRelationsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRichTextFieldWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRotationGestureWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRoundedRectMeshWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRTLSupportWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIScrollPaneWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUISelectionShapeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIShaderConfigPropertyIDsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIShaderConfigWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIShapeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIStageCameraWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIStageEngineWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIStageWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIStatsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUISwipeGestureWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITextFieldCharPositionWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITextFieldLineInfoWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITextFieldWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITextFormatWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITimersWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITouchScreenKeyboardWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITransitionWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITranslationHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITreeNodeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITreeViewWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITweenValueWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITypingEffectWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIConfigConfigValueWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIConfigWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIContentScalerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIObjectFactoryWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIPackageWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIPainterWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIPanelWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUpdateContextClipInfoWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUpdateContextWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsByteBufferWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlButtonWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlElementWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlImageWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlInputWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlLinkWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlPageContextWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlParseOptionsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlParserWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlSelectWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsIHtmlObjectWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsIHtmlPageContextWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsToolSetWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsUBBParserWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsXMLIteratorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsXMLListEnumeratorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsXMLListWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsXMLUtilsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsXMLWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsZipReaderWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsZipReaderZipEntryWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIVertexBufferWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIWindowWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MicrosoftIORecyclableMemoryStreamManagerEventsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MicrosoftIORecyclableMemoryStreamManagerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MicrosoftIORecyclableMemoryStreamWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonDefaultValueAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonElementAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonIdAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonIgnoreAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonIgnoreExtraElementsAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonIgnoreIfDefaultAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonIgnoreIfNullAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PackUnpack.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAdvancedSmoothConstantTurnWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAdvancedSmoothMaxTurnWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAdvancedSmoothTurnConstructorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAdvancedSmoothTurnWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAdvancedSmoothWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAIBaseWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAIDestinationSetterWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAILerpWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAIPathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAlternativePathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAstarColorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAstarDataWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAstarDebuggerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAstarProfilerProfilePointWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAstarProfilerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAstarWorkItemWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingBlockManagerTraversalProviderWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingBlockManagerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingEnumFlagAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingExamplesMecanimBridgeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingExamplesMineBotAnimationWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingExamplesTurnBasedAIWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingFunnelModifierWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphEditorBaseWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphModifierWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphUpdateObjectWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphUpdateSceneWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphUpdateShapeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphUpdateUtilitiesWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphUtilitiesWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingIAstarAIWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingIPathModifierWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingIVersionedMonoBehaviourInternalWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingIWorkItemContextWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingMathHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingMonoModifierWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingNodeLinkWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingObjImporterWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingPathModifierWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingPathUtilitiesWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingPatrolWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingProfileWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingProgressWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRadiusModifierWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRaycastModifierWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRecastBBTreeBoxWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRecastBBTreeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRecastMeshObjWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRecastTileUpdateHandlerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRecastTileUpdateWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRelevantGraphSurfaceWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVOIAgentWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVOLineWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVOObstacleVertexWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVORVOControllerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVORVONavmeshWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVORVOObstacleWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVORVOQuadtreeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVORVOSimulatorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVORVOSquareObstacleWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVOSampledAgentWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVOSimulatorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingSeekerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingSimpleSmoothModifierWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingSingleNodeBlockerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingStartEndModifierWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingTargetMoverWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUniqueComponentAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUnityHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUnityReferenceHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilDrawWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilGraphGizmoHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilMovementUtilitiesWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilPathInterpolatorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilRetainedGizmosBuilderWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilRetainedGizmosHasherWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilRetainedGizmosWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVersionedMonoBehaviourWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsCompactVoxelCellWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsCompactVoxelSpanWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsLinkedVoxelSpanWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsRasterizationMeshWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsUtilityWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelAreaWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelCellWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelContourSetWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelContourWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelizeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelMeshWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelSpanWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFABPathEndingConditionWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFABPathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFAStarConfigWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFAstarDeserializerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFAstarMathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFAstarSerializerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFBBTreeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFBinaryHeapWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFChecksumWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFConnectionWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFConstantPathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFDefaultITraversalProviderWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFEndingConditionDistanceWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFEndingConditionProximityWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFEuclideanEmbeddingWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFleePathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFloodPathConstraintWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFloodPathTracerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFloodPathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFunnelFunnelPortalsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFunnelPathPartWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFunnelWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFGraphHitInfoWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFGraphMetaWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFGraphNodeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFGraphSerializationContextWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFGraphTransformWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFGuidWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFIAstarPooledObjectWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFIGraphInternalsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFIMovementPlaneWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFINavmeshHolderWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFINavmeshWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFInt2Wrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFInt3Wrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFIntRectWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFIRaycastableGraphWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFITransformedGraphWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFITransformWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFITraversalProviderWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFJsonMemberAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFJsonOptInAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFListExtensionsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFMemoryWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFMeshNodeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFMultiTargetPathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFNavGraphWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFNavmeshBaseWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFNavmeshTileWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFNNConstraintWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFNNInfoInternalWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFNNInfoWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathEndingConditionWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathFindHelperWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathHandlerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathNNConstraintWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathNodeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathPoolWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathProcessorGraphUpdateLockWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathProcessorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathReturnQueueWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPolygonWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFRandomPathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFRecastGraphWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFSerializeSettingsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFTinyJsonDeserializerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFTinyJsonSerializerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFTriangleMeshNodeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFVectorMathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFWindowsStoreCompatibilityWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFXPathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoContractAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoConverterAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoEnumAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoIgnoreAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoIncludeAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoMemberAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoPartialIgnoreAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoPartialMemberAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsGenericList1BehaviorDesignerRuntimeTasksHotfixActionWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsGenericList1BehaviorDesignerRuntimeTasksHotfixCompositeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsGenericList1BehaviorDesignerRuntimeTasksHotfixConditionalWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsGenericList1BehaviorDesignerRuntimeTasksHotfixDecoratorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsGenericList1SystemInt32Wrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsGenericList1SystemStringWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsIEnumeratorBridge.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemConvertWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemIOIOExceptionWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemIOMemoryStreamWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemIOPathWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemIOStreamWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemNetEndPointWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemNetIPAddressWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemNetIPEndPointWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemNetSocketsSocketAsyncEventArgsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemNetSocketsSocketWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemObjectWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemSerializableAttributeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemTextEncodingWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemTypeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineAnimationClipWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineAnimationCurveWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineAnimatorControllerParameterWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineAnimatorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineAssetBundleManifestWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineAsyncOperationWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineBehaviourWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineBoundsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineCameraWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineColorWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineComponentWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineDebugWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineGameObjectWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineInputWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineKeyframeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineLightWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineMathfWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineMonoBehaviourWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineObjectWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineParticleSystemWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEnginePhysicsWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineQuaternionWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineRay2DWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineRaycastHitWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineRayWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineRendererWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineResourcesWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineRuntimeAnimatorControllerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineSceneManagementSceneManagerWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineSkinnedMeshRendererWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineTextAssetWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineTimeWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineTransformWrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineVector2Wrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineVector3Wrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineVector4Wrap.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\WrapPusher.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\XLuaGenAutoRegister.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\CodeEmit.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\CopyByValue.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\DelegateBridge.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\GenAttributes.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\GenConfig.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\InternalGlobals.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\LuaBase.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\LuaDLL.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\LuaEnv.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\LuaException.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\LuaFunction.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\LuaTable.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\MethodWarpsCache.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\ObjectCasters.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\ObjectPool.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\ObjectTranslator.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\ObjectTranslatorPool.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\RawObject.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\SignatureLoader.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\StaticLuaCallbacks.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\TemplateEngine\TemplateEngine.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\TypeExtensions.cs" />
-    <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\Utils.cs" />
-    <None Include="Packages\DCET.Lua\Runtime\XLua\Resources\xlua\util.lua.txt" />
-    <None Include="Packages\DCET.Lua\Runtime\Unity.DCET.Lua.Runtime.asmdef" />
-    <None Include="Packages\DCET.Lua\Runtime\XLua\Resources\perf\profiler.lua.txt" />
-    <None Include="Packages\DCET.Lua\Runtime\XLua\Resources\protoc.lua.txt" />
-    <None Include="Packages\DCET.Lua\Runtime\XLua\Resources\perf\memory.lua.txt" />
-    <None Include="Packages\DCET.Lua\Runtime\XLua\Gen\link.xml" />
-    <None Include="Packages\DCET.Lua\Runtime\XLua\CHANGELOG.txt" />
-    <None Include="Packages\DCET.Lua\Runtime\XLua\Resources\tdr\tdr.lua.txt" />
-    <Reference Include="UnityEngine.AIModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ARModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AccessibilityModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AnimationModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AudioModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.BaselibModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ClothModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ClusterInputModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ClusterRendererModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CrashReportingModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.DirectorModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.FileSystemHttpModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.GridModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.HotReloadModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.InputModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.LocalizationModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ProfilerModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.StreamingModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.StyleSheetsModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SubstanceModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TLSModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TextCoreModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TimelineModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UIModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UNETModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UmbraModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityConnectModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityTestProtocolModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VFXModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VehiclesModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VideoModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.WindModule">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Locator">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.TestRunner">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TestRunner">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Timeline">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Timeline">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Networking">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.GoogleAudioSpatializer">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.GoogleAudioSpatializer">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.VR">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Graphs">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
-      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/DCET.Core/Plugins/ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/DCET.Core/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/DCET.Core/Plugins/Editor/npoi/NPOI.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OOXML">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/DCET.Core/Plugins/Editor/npoi/NPOI.OOXML.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXml4Net">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/DCET.Core/Plugins/Editor/npoi/NPOI.OpenXml4Net.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXmlFormats">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/DCET.Core/Plugins/Editor/npoi/NPOI.OpenXmlFormats.dll</HintPath>
-    </Reference>
-    <Reference Include="Miku.Cecil">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/DCET.Lua/Editor/LuaProfiler/CECIL/Miku.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="MikuBinary">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/DCET.Lua/Plugins/MikuBinary.dll</HintPath>
-    </Reference>
-    <Reference Include="MikuHook">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/DCET.Lua/Plugins/MikuHook.dll</HintPath>
-    </Reference>
-    <Reference Include="Pathfinding.ClipperLib">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/DCET.Pathfinding/Plugins/AstarPathfindingProject/Clipper/Pathfinding.ClipperLib.dll</HintPath>
-    </Reference>
-    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/DCET.Pathfinding/Plugins/AstarPathfindingProject/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
-    </Reference>
-    <Reference Include="Pathfinding.Poly2Tri">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/DCET.Pathfinding/Plugins/AstarPathfindingProject/Poly2Tri/Pathfinding.Poly2Tri.dll</HintPath>
-    </Reference>
-    <Reference Include="BehaviorDesignerEditor">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/Behavior Designer/Editor/Core/BehaviorDesignerEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="BehaviorDesignerRuntime">
-      <HintPath>F:/XGY/Projects/ET/ET6.0CSharpLua/DCETXlua/Unity/Packages/Behavior Designer/Runtime/Core/BehaviorDesignerRuntime.dll</HintPath>
-    </Reference>
-    <Reference Include="mscorlib">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
-    </Reference>
-    <Reference Include="System">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Core">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.Linq">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics.Vectors">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CSharp">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Win32.Primitives">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="netstandard">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
-    </Reference>
-    <Reference Include="System.AppContext">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections.Concurrent">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections.NonGeneric">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections.Specialized">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.Annotations">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.EventBasedAsync">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.Primitives">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.TypeConverter">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Console">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.Common">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.Contracts">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.Debug">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.FileVersionInfo">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.Process">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.StackTrace">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.TextWriterTraceListener">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.Tools">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.TraceSource">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Drawing.Primitives">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Dynamic.Runtime">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Globalization.Calendars">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Globalization">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Globalization.Extensions">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Compression.ZipFile">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.FileSystem">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.FileSystem.DriveInfo">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.FileSystem.Primitives">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.FileSystem.Watcher">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.IsolatedStorage">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.MemoryMappedFiles">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Pipes">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.UnmanagedMemoryStream">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Linq">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Linq.Expressions">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Linq.Parallel">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Linq.Queryable">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.Rtc">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.NameResolution">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.NetworkInformation">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Ping">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Primitives">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Requests">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Security">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Sockets">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.WebHeaderCollection">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.WebSockets.Client">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.WebSockets">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ObjectModel">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Emit">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Emit.ILGeneration">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Emit.Lightweight">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Extensions">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Primitives">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Resources.Reader">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Resources.ResourceManager">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Resources.Writer">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.VisualC">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Extensions">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Handles">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Numerics">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Formatters">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Json">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Primitives">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Xml">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Claims">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Algorithms">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Csp">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Encoding">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Primitives">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.X509Certificates">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Principal">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.SecureString">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Duplex">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Http">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.NetTcp">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Primitives">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Security">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Encoding">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Encoding.Extensions">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.RegularExpressions">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Overlapped">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Parallel">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Thread">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.ThreadPool">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Timer">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ValueTuple">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.ReaderWriter">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XDocument">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XmlDocument">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XmlSerializer">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XPath">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XPath.XDocument">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityScript">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityScript.Lang">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll</HintPath>
-    </Reference>
-    <Reference Include="Boo.Lang">
-      <HintPath>F:/XGY/Tools/Begins/Unity/2018.4.12f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
-    </Reference>
+     <Compile Include="Packages\DCET.Lua\Runtime\Helper\LuaHelper.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\List.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\LuaDLL.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\LuaProfiler.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\NativeHelper.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\ObjectPool.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\Parse\Common.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\Parse\LLex.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\Parse\Parse.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\Parse\Util.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Driver\Sample.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\LuaHookSetup.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\NetWork\NetWorkClient.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Setting\LuaDeepProfilerAssetSetting.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\LuaProfiler\Setting\LuaDeepProfilerSetting.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\BuildInInit.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\AstarPathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeBehaviorTreeControllerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeBehaviorTreeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeExternalBehaviorTreeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksConditionalEvaluatorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksEntryTaskWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksHotfixActionWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksHotfixCompositeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksHotfixConditionalWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksHotfixDecoratorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksInterruptWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksInverterWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksParallelCompleteWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksParallelSelectorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksParallelWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksPrioritySelectorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksRandomSelectorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksRandomSequenceWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksRepeaterWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksReturnFailureWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksReturnSuccessWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksSelectorEvaluatorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksSelectorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksSequenceWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksTaskGuardWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksUntilFailureWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksUntilSuccessWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\BehaviorDesignerRuntimeTasksUtilitySelectorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeAcceptAllCertificateWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeAssetBundleLoaderAsyncWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeAssetBundlesWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeAssetDatabaseHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeAssetLoaderAsyncWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeBundleDownloaderWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeCameraDepthTextureWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeCircularBufferWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeComponentViewWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeDefineWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeFileHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeFileVersionInfoWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeFUIPackageWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeGameLoopWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeGameObjectHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeGizmosDebugWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeGlobalConfigComponentWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeGlobalProtoWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeIStaticMethodWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeKcpWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeLocalTimeHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeLogWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeMD5HelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeMongoHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeMonoBehaviourBridgeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeMonoStaticMethodWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeOneThreadSynchronizationContextWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimePathHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimePrefabLightmapDataMeshRendererLightmapDataWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimePrefabLightmapDataTerrainLightmapDataWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimePrefabLightmapDataWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeProcessHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeReferenceCollectorDataComparerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeReferenceCollectorDataWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeReferenceCollectorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeReferenceLoaderWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeResourcesHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeStreamHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeStringHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeUnityWebRequestAsyncWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeVersionConfigWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DCETRuntimeZipHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\DelegatesGensBridge.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\EnumWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIAsyncCreationHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIBaseFontWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIBitmapFontBMGlyphWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIBitmapFontWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIBlendModeUtilsBlendFactorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIBlendModeUtilsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIBlurFilterWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUICaptureCameraWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIChangePageActionWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIColliderHitTestWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIColorFilterWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUICompositeMeshWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIContainerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIControllerActionWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIControllerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUICopyPastePatchWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIDisplayObjectInfoWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIDisplayObjectWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIDisplayOptionsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIDragDropManagerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIDynamicFontWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEllipseMeshWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEmojiWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEMRenderSupportWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEMRenderTargetWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEventContextWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEventDispatcherWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIEventListenerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIFillMeshWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIFontManagerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGButtonWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGComboBoxWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGComponentWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearAnimationWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearBaseWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearColorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearDisplayWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearIconWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearLookWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearSizeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearTextWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearTweenConfigWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGearXYWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGGraphWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGGroupWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGImageWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGLabelWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGListWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGLoaderWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGlyphInfoWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGMovieClipWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGObjectPoolWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGObjectWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGoWrapperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGPathPointWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGPathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGProgressBarWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGRichTextFieldWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGRootWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGScrollBarWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGSliderWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGTextFieldWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGTextInputWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGTweenerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIGTweenWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIHitTestContextWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIAnimationGearWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIColorGearWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIEventDispatcherWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIFilterWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIHitTestWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIKeyboardWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIImageWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIMeshFactoryWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIInputEventWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIInputTextFieldWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIITextColorGearWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIITweenListenerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIIUISourceWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUILineMeshWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUILongPressGestureWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIMarginWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIMaterialManagerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIMeshColliderHitTestWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIMovieClipFrameWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIMovieClipWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUINAudioClipWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUINGraphicsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUINMaterialWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUINTextureWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPackageItemWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPageOptionWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPinchGestureWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPixelHitTestDataWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPixelHitTestWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPlayTransitionActionWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPolygonMeshWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIPopupMenuWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRectHitTestWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRectMeshWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRegularPolygonMeshWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRelationsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRichTextFieldWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRotationGestureWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRoundedRectMeshWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIRTLSupportWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIScrollPaneWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUISelectionShapeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIShaderConfigPropertyIDsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIShaderConfigWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIShapeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIStageCameraWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIStageEngineWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIStageWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIStatsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUISwipeGestureWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITextFieldCharPositionWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITextFieldLineInfoWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITextFieldWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITextFormatWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITimersWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITouchScreenKeyboardWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITransitionWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITranslationHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITreeNodeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITreeViewWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITweenValueWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUITypingEffectWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIConfigConfigValueWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIConfigWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIContentScalerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIObjectFactoryWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIPackageWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIPainterWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUIPanelWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUpdateContextClipInfoWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUpdateContextWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsByteBufferWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlButtonWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlElementWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlImageWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlInputWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlLinkWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlPageContextWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlParseOptionsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlParserWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsHtmlSelectWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsIHtmlObjectWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsIHtmlPageContextWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsToolSetWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsUBBParserWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsXMLIteratorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsXMLListEnumeratorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsXMLListWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsXMLUtilsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsXMLWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsZipReaderWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIUtilsZipReaderZipEntryWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIVertexBufferWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\FairyGUIWindowWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MicrosoftIORecyclableMemoryStreamManagerEventsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MicrosoftIORecyclableMemoryStreamManagerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MicrosoftIORecyclableMemoryStreamWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonDefaultValueAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonElementAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonIdAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonIgnoreAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonIgnoreExtraElementsAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonIgnoreIfDefaultAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\MongoDBBsonSerializationAttributesBsonIgnoreIfNullAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PackUnpack.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAdvancedSmoothConstantTurnWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAdvancedSmoothMaxTurnWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAdvancedSmoothTurnConstructorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAdvancedSmoothTurnWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAdvancedSmoothWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAIBaseWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAIDestinationSetterWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAILerpWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAIPathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAlternativePathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAstarColorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAstarDataWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAstarDebuggerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAstarProfilerProfilePointWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAstarProfilerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingAstarWorkItemWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingBlockManagerTraversalProviderWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingBlockManagerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingEnumFlagAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingExamplesMecanimBridgeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingExamplesMineBotAnimationWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingExamplesTurnBasedAIWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingFunnelModifierWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphEditorBaseWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphModifierWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphUpdateObjectWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphUpdateSceneWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphUpdateShapeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphUpdateUtilitiesWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingGraphUtilitiesWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingIAstarAIWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingIPathModifierWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingIVersionedMonoBehaviourInternalWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingIWorkItemContextWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingMathHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingMonoModifierWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingNodeLinkWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingObjImporterWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingPathModifierWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingPathUtilitiesWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingPatrolWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingProfileWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingProgressWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRadiusModifierWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRaycastModifierWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRecastBBTreeBoxWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRecastBBTreeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRecastMeshObjWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRecastTileUpdateHandlerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRecastTileUpdateWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRelevantGraphSurfaceWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVOIAgentWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVOLineWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVOObstacleVertexWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVORVOControllerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVORVONavmeshWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVORVOObstacleWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVORVOQuadtreeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVORVOSimulatorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVORVOSquareObstacleWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVOSampledAgentWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingRVOSimulatorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingSeekerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingSimpleSmoothModifierWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingSingleNodeBlockerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingStartEndModifierWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingTargetMoverWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUniqueComponentAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUnityHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUnityReferenceHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilDrawWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilGraphGizmoHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilMovementUtilitiesWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilPathInterpolatorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilRetainedGizmosBuilderWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilRetainedGizmosHasherWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingUtilRetainedGizmosWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVersionedMonoBehaviourWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsCompactVoxelCellWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsCompactVoxelSpanWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsLinkedVoxelSpanWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsRasterizationMeshWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsUtilityWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelAreaWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelCellWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelContourSetWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelContourWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelizeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelMeshWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PathfindingVoxelsVoxelSpanWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFABPathEndingConditionWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFABPathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFAStarConfigWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFAstarDeserializerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFAstarMathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFAstarSerializerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFBBTreeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFBinaryHeapWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFChecksumWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFConnectionWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFConstantPathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFDefaultITraversalProviderWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFEndingConditionDistanceWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFEndingConditionProximityWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFEuclideanEmbeddingWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFleePathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFloodPathConstraintWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFloodPathTracerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFloodPathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFunnelFunnelPortalsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFunnelPathPartWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFFunnelWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFGraphHitInfoWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFGraphMetaWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFGraphNodeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFGraphSerializationContextWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFGraphTransformWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFGuidWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFIAstarPooledObjectWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFIGraphInternalsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFIMovementPlaneWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFINavmeshHolderWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFINavmeshWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFInt2Wrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFInt3Wrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFIntRectWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFIRaycastableGraphWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFITransformedGraphWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFITransformWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFITraversalProviderWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFJsonMemberAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFJsonOptInAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFListExtensionsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFMemoryWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFMeshNodeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFMultiTargetPathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFNavGraphWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFNavmeshBaseWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFNavmeshTileWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFNNConstraintWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFNNInfoInternalWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFNNInfoWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathEndingConditionWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathFindHelperWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathHandlerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathNNConstraintWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathNodeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathPoolWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathProcessorGraphUpdateLockWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathProcessorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathReturnQueueWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFPolygonWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFRandomPathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFRecastGraphWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFSerializeSettingsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFTinyJsonDeserializerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFTinyJsonSerializerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFTriangleMeshNodeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFVectorMathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFWindowsStoreCompatibilityWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\PFXPathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoContractAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoConverterAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoEnumAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoIgnoreAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoIncludeAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoMemberAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoPartialIgnoreAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\ProtoBufProtoPartialMemberAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsGenericList1BehaviorDesignerRuntimeTasksHotfixActionWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsGenericList1BehaviorDesignerRuntimeTasksHotfixCompositeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsGenericList1BehaviorDesignerRuntimeTasksHotfixConditionalWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsGenericList1BehaviorDesignerRuntimeTasksHotfixDecoratorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsGenericList1SystemInt32Wrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsGenericList1SystemStringWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemCollectionsIEnumeratorBridge.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemConvertWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemIOIOExceptionWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemIOMemoryStreamWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemIOPathWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemIOStreamWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemNetEndPointWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemNetIPAddressWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemNetIPEndPointWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemNetSocketsSocketAsyncEventArgsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemNetSocketsSocketWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemObjectWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemSerializableAttributeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemTextEncodingWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\SystemTypeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineAnimationClipWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineAnimationCurveWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineAnimatorControllerParameterWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineAnimatorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineAssetBundleManifestWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineAsyncOperationWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineBehaviourWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineBoundsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineCameraWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineColorWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineComponentWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineDebugWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineGameObjectWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineInputWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineKeyframeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineLightWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineMathfWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineMonoBehaviourWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineObjectWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineParticleSystemWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEnginePhysicsWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineQuaternionWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineRay2DWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineRaycastHitWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineRayWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineRendererWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineResourcesWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineRuntimeAnimatorControllerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineSceneManagementSceneManagerWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineSkinnedMeshRendererWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineTextAssetWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineTimeWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineTransformWrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineVector2Wrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineVector3Wrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\UnityEngineVector4Wrap.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\WrapPusher.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Gen\XLuaGenAutoRegister.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\CodeEmit.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\CopyByValue.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\DelegateBridge.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\GenAttributes.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\GenConfig.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\InternalGlobals.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\LuaBase.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\LuaDLL.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\LuaEnv.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\LuaException.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\LuaFunction.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\LuaTable.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\MethodWarpsCache.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\ObjectCasters.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\ObjectPool.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\ObjectTranslator.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\ObjectTranslatorPool.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\RawObject.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\SignatureLoader.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\StaticLuaCallbacks.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\TemplateEngine\TemplateEngine.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\TypeExtensions.cs" />
+     <Compile Include="Packages\DCET.Lua\Runtime\XLua\Src\Utils.cs" />
+     <None Include="Packages\DCET.Lua\Runtime\XLua\Resources\xlua\util.lua.txt" />
+     <None Include="Packages\DCET.Lua\Runtime\Unity.DCET.Lua.Runtime.asmdef" />
+     <None Include="Packages\DCET.Lua\Runtime\XLua\Resources\perf\profiler.lua.txt" />
+     <None Include="Packages\DCET.Lua\Runtime\XLua\Resources\protoc.lua.txt" />
+     <None Include="Packages\DCET.Lua\Runtime\XLua\Resources\perf\memory.lua.txt" />
+     <None Include="Packages\DCET.Lua\Runtime\XLua\Gen\link.xml" />
+     <None Include="Packages\DCET.Lua\Runtime\XLua\CHANGELOG.txt" />
+     <None Include="Packages\DCET.Lua\Runtime\XLua\Resources\tdr\tdr.lua.txt" />
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.BaselibModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FileSystemHttpModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StyleSheetsModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextCoreModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TimelineModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityTestProtocolModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VFXModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Locator">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Timeline">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.GoogleAudioSpatializer">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Core/Plugins/ICSharpCode.SharpZipLib.dll</HintPath>
+ </Reference>
+ <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Core/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
+ </Reference>
+ <Reference Include="NPOI">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Core/Plugins/Editor/npoi/NPOI.dll</HintPath>
+ </Reference>
+ <Reference Include="NPOI.OOXML">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Core/Plugins/Editor/npoi/NPOI.OOXML.dll</HintPath>
+ </Reference>
+ <Reference Include="NPOI.OpenXml4Net">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Core/Plugins/Editor/npoi/NPOI.OpenXml4Net.dll</HintPath>
+ </Reference>
+ <Reference Include="NPOI.OpenXmlFormats">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Core/Plugins/Editor/npoi/NPOI.OpenXmlFormats.dll</HintPath>
+ </Reference>
+ <Reference Include="Miku.Cecil">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Lua/Editor/LuaProfiler/CECIL/Miku.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="MikuBinary">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Lua/Plugins/MikuBinary.dll</HintPath>
+ </Reference>
+ <Reference Include="MikuHook">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Lua/Plugins/MikuHook.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.ClipperLib">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Pathfinding/Plugins/AstarPathfindingProject/Clipper/Pathfinding.ClipperLib.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Pathfinding/Plugins/AstarPathfindingProject/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.Poly2Tri">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Pathfinding/Plugins/AstarPathfindingProject/Poly2Tri/Pathfinding.Poly2Tri.dll</HintPath>
+ </Reference>
+ <Reference Include="BehaviorDesignerEditor">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/Behavior Designer/Editor/Core/BehaviorDesignerEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="BehaviorDesignerRuntime">
+ <HintPath>F:/DukeChiangGit/ET/Unity/Packages/Behavior Designer/Runtime/Core/BehaviorDesignerRuntime.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics.Vectors">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CSharp">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Win32.Primitives">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="netstandard">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
+ </Reference>
+ <Reference Include="System.AppContext">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Concurrent">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.NonGeneric">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Specialized">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Annotations">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.EventBasedAsync">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Primitives">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.TypeConverter">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Console">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data.Common">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Contracts">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Debug">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.FileVersionInfo">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Process">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.StackTrace">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TextWriterTraceListener">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Tools">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TraceSource">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing.Primitives">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Dynamic.Runtime">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Calendars">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Extensions">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression.ZipFile">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.DriveInfo">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Primitives">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Watcher">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.IsolatedStorage">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.MemoryMappedFiles">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Pipes">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.UnmanagedMemoryStream">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Expressions">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Parallel">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Queryable">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http.Rtc">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NameResolution">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NetworkInformation">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Ping">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Primitives">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Requests">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Security">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Sockets">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebHeaderCollection">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets.Client">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ObjectModel">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit.ILGeneration">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit.Lightweight">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Extensions">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Primitives">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Reader">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.ResourceManager">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Writer">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.CompilerServices.VisualC">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Extensions">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Handles">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Numerics">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Formatters">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Json">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Primitives">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Xml">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Claims">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Algorithms">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Csp">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Encoding">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Primitives">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.X509Certificates">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Principal">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.SecureString">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Duplex">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Http">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.NetTcp">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Primitives">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Security">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding.Extensions">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.RegularExpressions">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Overlapped">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks.Parallel">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Thread">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.ThreadPool">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Timer">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ValueTuple">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.ReaderWriter">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XDocument">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlDocument">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlSerializer">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath.XDocument">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript.Lang">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll</HintPath>
+ </Reference>
+ <Reference Include="Boo.Lang">
+ <HintPath>F:/Program Files/Unity2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.DCET.Core.Runtime.csproj">
-      <Project>{78EC5405-4AAA-1933-8EE9-A149A8F468EB}</Project>
-      <Name>Unity.DCET.Core.Runtime</Name>
-    </ProjectReference>
+      <Project>{78EC5405-4AAA-1933-8EE9-A149A8F468EB}</Project>      <Name>Unity.DCET.Core.Runtime</Name>    </ProjectReference>
     <ProjectReference Include="Unity.BehaviorDesigner.Runtime.csproj">
-      <Project>{B04BF23E-2EA0-221F-942C-19DFE6549B89}</Project>
-      <Name>Unity.BehaviorDesigner.Runtime</Name>
-    </ProjectReference>
+      <Project>{B04BF23E-2EA0-221F-942C-19DFE6549B89}</Project>      <Name>Unity.BehaviorDesigner.Runtime</Name>    </ProjectReference>
     <ProjectReference Include="Unity.FairyGUI.Runtime.csproj">
-      <Project>{02078D6A-F042-765D-85AD-170AD6896D45}</Project>
-      <Name>Unity.FairyGUI.Runtime</Name>
-    </ProjectReference>
+      <Project>{02078D6A-F042-765D-85AD-170AD6896D45}</Project>      <Name>Unity.FairyGUI.Runtime</Name>    </ProjectReference>
     <ProjectReference Include="Unity.DCET.Message.Runtime.csproj">
-      <Project>{464E5413-897E-9A0C-198D-4BF4295325D1}</Project>
-      <Name>Unity.DCET.Message.Runtime</Name>
-    </ProjectReference>
+      <Project>{464E5413-897E-9A0C-198D-4BF4295325D1}</Project>      <Name>Unity.DCET.Message.Runtime</Name>    </ProjectReference>
     <ProjectReference Include="Unity.DCET.AssetBundle.Runtime.csproj">
-      <Project>{D1FC27D2-19A2-2B35-990D-088E7E112BB7}</Project>
-      <Name>Unity.DCET.AssetBundle.Runtime</Name>
-    </ProjectReference>
+      <Project>{D1FC27D2-19A2-2B35-990D-088E7E112BB7}</Project>      <Name>Unity.DCET.AssetBundle.Runtime</Name>    </ProjectReference>
     <ProjectReference Include="Unity.MongoDB.Runtime.csproj">
-      <Project>{847D3640-7FC2-C576-ECC2-980D265728B0}</Project>
-      <Name>Unity.MongoDB.Runtime</Name>
-    </ProjectReference>
+      <Project>{847D3640-7FC2-C576-ECC2-980D265728B0}</Project>      <Name>Unity.MongoDB.Runtime</Name>    </ProjectReference>
     <ProjectReference Include="Unity.DCET.Pathfinding.Runtime.csproj">
-      <Project>{52B6CC4C-CCAC-9244-49FF-415FA41D801C}</Project>
-      <Name>Unity.DCET.Pathfinding.Runtime</Name>
-    </ProjectReference>
+      <Project>{52B6CC4C-CCAC-9244-49FF-415FA41D801C}</Project>      <Name>Unity.DCET.Pathfinding.Runtime</Name>    </ProjectReference>
     <ProjectReference Include="Unity.DCET.FairyGUI.Runtime.csproj">
-      <Project>{F57730E8-0F11-9C9D-04A0-CD3982B7B385}</Project>
-      <Name>Unity.DCET.FairyGUI.Runtime</Name>
-    </ProjectReference>
+      <Project>{F57730E8-0F11-9C9D-04A0-CD3982B7B385}</Project>      <Name>Unity.DCET.FairyGUI.Runtime</Name>    </ProjectReference>
     <ProjectReference Include="Unity.ProtoBuf.Runtime.csproj">
-      <Project>{7BA5D9E0-712B-DCB9-81F4-42AEE8A0BE9C}</Project>
-      <Name>Unity.ProtoBuf.Runtime</Name>
-    </ProjectReference>
+      <Project>{7BA5D9E0-712B-DCB9-81F4-42AEE8A0BE9C}</Project>      <Name>Unity.ProtoBuf.Runtime</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -1249,4 +1216,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>

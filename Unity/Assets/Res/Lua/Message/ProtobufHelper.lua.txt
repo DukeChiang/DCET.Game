@@ -7,15 +7,14 @@ System.namespace("DCET", function (namespace)
     local ToStream, FromStream, static
     static = function (this)
       if DCETRuntime.Define.IsAsync then
-        --int result = DCETRuntime.AssetBundles.Default.CheckRes("outermessage.unity3d", "OuterMessage.txt");
-        --Log.Debug("check result:" + result);
         local textAsset = DCETRuntime.AssetBundles.getDefault():LoadAsset("outermessage.unity3d", "OuterMessage")
+
         if UnityEngine.Object.op_Inequality(textAsset, nil) and System.is(textAsset, UnityEngine.TextAsset) then
-          local prototxt = System.as(textAsset, UnityEngine.TextAsset)
-          local allmsg = prototxt:gettext()
+          local protoTextAsset = System.as(textAsset, UnityEngine.TextAsset)
+          local protoText = protoTextAsset:gettext()
           local protoc = require "protoc"
-          DCET.Log.Debug("load proto:"..allmsg)
-          protoc:load(allmsg)
+          DCET.Log.Debug("load proto:" .. protoText)
+          protoc:load(protoText)
         end
       else
         local pb = require "pb"

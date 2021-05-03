@@ -109,7 +109,7 @@ System.namespace("DCET", function (namespace)
             { "MapIndex", 0x6, System.Int32, System.apply(out.ProtoBuf.ProtoMemberAttribute(3), function (default) default:setIsRequired(true)default:setDataFormat(ProtoBuf.DataFormat.TwosComplement) end) },
             { "RpcId", 0x106, System.Int32, getRpcId, setRpcId, System.apply(out.ProtoBuf.ProtoMemberAttribute(1), function (default) default:setIsRequired(true)default:setDataFormat(ProtoBuf.DataFormat.TwosComplement) end) }
           },
-          class = { 0x6, out.DCET.MessageAttribute(10003 --[[OuterOpcode.Actor_TransferRequest]]), out.ProtoBuf.ProtoContractAttribute() }
+          class = { 0x6, out.ProtoBuf.ProtoContractAttribute(), out.DCET.MessageAttribute(10003 --[[OuterOpcode.Actor_TransferRequest]]) }
         }
       end
     }

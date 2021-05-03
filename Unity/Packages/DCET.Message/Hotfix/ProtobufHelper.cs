@@ -15,18 +15,17 @@ namespace DCET
 #if __CSharpLua__
 			if (DCETRuntime.Define.IsAsync)
 			{
-				//int result = DCETRuntime.AssetBundles.Default.CheckRes("outermessage.unity3d", "OuterMessage.txt");
-				//Log.Debug("check result:" + result);
 				var textAsset = DCETRuntime.AssetBundles.Default.LoadAsset("outermessage.unity3d", "OuterMessage");
+				
 				if (textAsset != null && textAsset is TextAsset)
 				{
-					TextAsset prototxt = textAsset as TextAsset;
-					string allmsg = prototxt.text;
+					TextAsset protoTextAsset = textAsset as TextAsset;
+					string protoText = protoTextAsset.text;
 					/*
 					 [[
 							local protoc = require "protoc"
-							DCET.Log.Debug("load proto:"..allmsg)
-							protoc:load(allmsg)
+							DCET.Log.Debug("load proto:" .. protoText)
+							protoc:load(protoText)
 					 ]]
 					 */
 				}
