@@ -30,6 +30,7 @@ namespace DCET
 		private static void InitByMono()
 		{
 			Game.EventSystem.AddAssemblyType(DCETRuntime.MonoHelper.Core);
+			Game.EventSystem.AddAssemblyType(DCETRuntime.MonoHelper.AssetBundle);
 			Game.EventSystem.AddAssemblyType(DCETRuntime.MonoHelper.Config);
 			Game.EventSystem.AddAssemblyType(DCETRuntime.MonoHelper.FairyGUI);
 			Game.EventSystem.AddAssemblyType(DCETRuntime.MonoHelper.Message);
