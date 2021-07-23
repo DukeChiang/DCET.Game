@@ -794,9 +794,6 @@
  <Reference Include="ICSharpCode.SharpZipLib">
  <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Core/Plugins/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
- <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
- <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Core/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
- </Reference>
  <Reference Include="NPOI">
  <HintPath>F:/DukeChiangGit/ET/Unity/Packages/DCET.Core/Plugins/Editor/npoi/NPOI.dll</HintPath>
  </Reference>

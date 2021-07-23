@@ -3,6 +3,7 @@ using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Text;
 using UnityEditor;
@@ -317,76 +318,68 @@ namespace DCETEditor
 
 		private static string GetCellString(ISheet sheet, int i, int j)
 		{
-		    return GetCellValue(sheet.GetRow(i)?.GetCell(j));
+			return GetCellValue(sheet.GetRow(i)?.GetCell(j));
 		}
 
 		private static string GetCellString(IRow row, int i)
 		{
-		    return GetCellValue(row?.GetCell(i));
-		}
-
-		private static string GetCellString(ICell cell)
-		{
-		    return GetCellValue(cell);
+			return GetCellValue(row?.GetCell(i));
 		}
 
 		private static string GetCellValue(ICell cell)
 		{
-		    if (cell == null)
-		    {
-			return string.Empty;
-		    }
+			if (cell == null)
+			{
+				return string.Empty;
+			}
 
-		    string value;
-		    switch (cell.CellType)
-		    {
-			case CellType.Numeric:
-			    if (DateUtil.IsCellDateFormatted(cell))
-			    {
-				value = cell.DateCellValue.ToString("yyyy-MM-dd-HH-mm-ss");
-			    }
-			    else
-			    {
-				value = cell.NumericCellValue.ToString();
-			    }
-
-			    break;
-			case CellType.String:
-			    value = cell.StringCellValue.Trim();
-			    break;
-			case CellType.Boolean:
-			    value = cell.BooleanCellValue.ToString();
-			    break;
-			case CellType.Error:
-			    throw new Exception($"单元格错误=>{cell.Row.RowNum},{cell.ColumnIndex}");
-			    break;
-			case CellType.Formula:
-			    switch (cell.CachedFormulaResultType)
-			    {
+			string value;
+			switch (cell.CellType)
+			{
 				case CellType.Numeric:
-				    value = cell.NumericCellValue.ToString(CultureInfo.InvariantCulture);
-				    break;
+					if (DateUtil.IsCellDateFormatted(cell))
+					{
+						value = cell.DateCellValue.ToString("yyyy-MM-dd-HH-mm-ss");
+					}
+					else
+					{
+						value = cell.NumericCellValue.ToString();
+					}
+
+					break;
 				case CellType.String:
-				    value = cell.StringCellValue.ToString(CultureInfo.InvariantCulture);
-				    break;
+					value = cell.StringCellValue.Trim();
+					break;
 				case CellType.Boolean:
-				    value = cell.BooleanCellValue.ToString();
-				    break;
+					value = cell.BooleanCellValue.ToString();
+					break;
 				case CellType.Error:
-				    throw new Exception($"单元格错误=>{cell.Row.RowNum},{cell.ColumnIndex}");
-				    break;
+					throw new Exception($"单元格错误=>{cell.Row.RowNum},{cell.ColumnIndex}");
+				case CellType.Formula:
+					switch (cell.CachedFormulaResultType)
+					{
+						case CellType.Numeric:
+							value = cell.NumericCellValue.ToString(CultureInfo.InvariantCulture);
+							break;
+						case CellType.String:
+							value = cell.StringCellValue.ToString(CultureInfo.InvariantCulture);
+							break;
+						case CellType.Boolean:
+							value = cell.BooleanCellValue.ToString();
+							break;
+						case CellType.Error:
+							throw new Exception($"单元格错误=>{cell.Row.RowNum},{cell.ColumnIndex}");
+						default:
+							value = cell.ToString();
+							break;
+					}
+					break;
 				default:
-				    value = cell.ToString();
-				    break;
-			    }
+					value = cell.ToString();
+					break;
+			}
 
-			    break;
-			default:
-			    value = cell.ToString();
-			    break;
-		    }
-
-		    return value;
+			return value;
 		}
 	}
 }
