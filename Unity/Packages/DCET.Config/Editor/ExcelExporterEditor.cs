@@ -317,17 +317,76 @@ namespace DCETEditor
 
 		private static string GetCellString(ISheet sheet, int i, int j)
 		{
-			return sheet.GetRow(i)?.GetCell(j)?.ToString() ?? "";
+		    return GetCellValue(sheet.GetRow(i)?.GetCell(j));
 		}
 
 		private static string GetCellString(IRow row, int i)
 		{
-			return row?.GetCell(i)?.ToString() ?? "";
+		    return GetCellValue(row?.GetCell(i));
 		}
 
 		private static string GetCellString(ICell cell)
 		{
-			return cell?.ToString() ?? "";
+		    return GetCellValue(cell);
+		}
+
+		private static string GetCellValue(ICell cell)
+		{
+		    if (cell == null)
+		    {
+			return string.Empty;
+		    }
+
+		    string value;
+		    switch (cell.CellType)
+		    {
+			case CellType.Numeric:
+			    if (DateUtil.IsCellDateFormatted(cell))
+			    {
+				value = cell.DateCellValue.ToString("yyyy-MM-dd-HH-mm-ss");
+			    }
+			    else
+			    {
+				value = cell.NumericCellValue.ToString();
+			    }
+
+			    break;
+			case CellType.String:
+			    value = cell.StringCellValue.Trim();
+			    break;
+			case CellType.Boolean:
+			    value = cell.BooleanCellValue.ToString();
+			    break;
+			case CellType.Error:
+			    throw new Exception($"单元格错误=>{cell.Row.RowNum},{cell.ColumnIndex}");
+			    break;
+			case CellType.Formula:
+			    switch (cell.CachedFormulaResultType)
+			    {
+				case CellType.Numeric:
+				    value = cell.NumericCellValue.ToString(CultureInfo.InvariantCulture);
+				    break;
+				case CellType.String:
+				    value = cell.StringCellValue.ToString(CultureInfo.InvariantCulture);
+				    break;
+				case CellType.Boolean:
+				    value = cell.BooleanCellValue.ToString();
+				    break;
+				case CellType.Error:
+				    throw new Exception($"单元格错误=>{cell.Row.RowNum},{cell.ColumnIndex}");
+				    break;
+				default:
+				    value = cell.ToString();
+				    break;
+			    }
+
+			    break;
+			default:
+			    value = cell.ToString();
+			    break;
+		    }
+
+		    return value;
 		}
 	}
 }
