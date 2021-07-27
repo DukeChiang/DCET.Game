@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -7,16 +7,34 @@ namespace DCETRuntime
 {
     internal class OpcodeInfo
     {
+        /// <summary>
+        /// 注释
+        /// </summary>
+        public string Desc;
+
+        /// <summary>
+        /// 名称
+        /// </summary>
         public string Name;
+
+        /// <summary>
+        /// 消息码
+        /// </summary>
         public int Opcode;
+
+        /// <summary>
+        /// 父类
+        /// </summary>
         public string ParentInterface;
     }
 
     public static class Program
     {
-        private static readonly char[] splitChars = { ' ', '\t' };
+        private static readonly char[] splitChars = {' ', '\t'};
         private static readonly List<OpcodeInfo> messageOpcode = new List<OpcodeInfo>();
-        private const string helpText = @"Usage: Proto2Opcode [-i:inFile] [-o:outFile] [-s:nameSpace] [-c:opcodeStart] [-e:className]
+
+        private const string helpText =
+            @"Usage: Proto2Opcode [-i:inFile] [-o:outFile] [-s:nameSpace] [-c:opcodeStart] [-e:className]
 Arguments
 -i              : Protocol input file
 -o              : Protocol opcode file
@@ -78,21 +96,32 @@ Options
                     Console.WriteLine(helpText);
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.Error.WriteLine(e.Message);
                 Console.WriteLine(helpText);
             }
         }
 
-        public static void Proto2Opcode(string nameSpace, string inputFile, string outputFile, ushort opcodeStart, string className)
+        /// <summary>
+        /// 生成消息码
+        /// </summary>
+        /// <param name="nameSpace">命名空间</param>
+        /// <param name="inputFile">输入文件</param>
+        /// <param name="outputFile">输出文件</param>
+        /// <param name="opcodeStart">消息码开始值</param>
+        /// <param name="className">类名</param>
+        public static void Proto2Opcode(string nameSpace, string inputFile, string outputFile, ushort opcodeStart,
+            string className)
         {
             messageOpcode.Clear();
-            
+
             string s = File.ReadAllText(inputFile);
 
-            foreach (string line in s.Split('\n'))
+            var split = s.Split('\n');
+            for (var index = 0; index < split.Length; index++)
             {
+                string line = split[index];
                 string newline = line.Trim();
 
                 if (newline == "")
@@ -100,11 +129,21 @@ Options
                     continue;
                 }
 
+
                 if (newline.StartsWith("message"))
                 {
                     var parentClass = string.Empty;
                     string msgName = newline.Split(splitChars, StringSplitOptions.RemoveEmptyEntries)[1];
-                    string[] ss = newline.Split(new[] { "//" }, StringSplitOptions.RemoveEmptyEntries);
+                    string[] ss = newline.Split(new[] {"//"}, StringSplitOptions.RemoveEmptyEntries);
+
+                    // 类注释
+                    string descLine = split[index - 1];
+                    string[] descList = descLine.Split(new[] {"//"}, StringSplitOptions.RemoveEmptyEntries);
+                    string classDesc = "";
+                    if (descList.Length > 0)
+                    {
+                        classDesc = descList[0].Trim();
+                    }
 
                     if (ss.Length == 2)
                     {
@@ -113,7 +152,8 @@ Options
 
                     if (!string.IsNullOrWhiteSpace(parentClass))
                     {
-                        messageOpcode.Add(new OpcodeInfo() { Name = msgName, Opcode = ++opcodeStart, ParentInterface = parentClass });
+                        messageOpcode.Add(new OpcodeInfo()
+                            {Name = msgName, Desc = classDesc, Opcode = ++opcodeStart, ParentInterface = parentClass});
                     }
                 }
             }
@@ -131,10 +171,14 @@ Options
             {
                 if (!string.IsNullOrWhiteSpace(info.ParentInterface))
                 {
-                    sb.Append($"\t[Message({className}.{info.Name})]\n");
+                    sb.AppendLine("\t/// <summary>");
+                    sb.AppendLine($"\t/// {info.Desc}");
+                    sb.AppendLine("\t/// </summary>");
+                    sb.AppendLine($"\t[Message({className}.{info.Name})]");
                     sb.AppendLine($"\tpublic partial class {info.Name} : {info.ParentInterface}");
                     sb.AppendLine("\t{");
                     sb.AppendLine("\t}");
+                    sb.AppendLine();
                 }
             }
 
@@ -143,7 +187,11 @@ Options
 
             foreach (OpcodeInfo info in messageOpcode)
             {
-                sb.AppendLine($"\t\t public const ushort {info.Name} = {info.Opcode};");
+                sb.AppendLine();
+                sb.AppendLine("\t\t/// <summary>");
+                sb.AppendLine($"\t\t/// {info.Desc}");
+                sb.AppendLine("\t\t/// </summary>");
+                sb.AppendLine($"\t\tpublic const ushort {info.Name} = {info.Opcode};");
             }
 
             sb.AppendLine("\t}");
