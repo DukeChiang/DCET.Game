@@ -26,6 +26,7 @@ DCET是基于ET4.0、5.0、6.0进行二次开发的分支版本，主要差异�
 
 - 中国版下载地址：[`https://unity.cn/releases`](https://unity.cn/releases)
 - 国际版下载地址：[`https://unity3d.com/get-unity/download/archive`](https://unity3d.com/get-unity/download/archive) (需要科学上网才能下载)
+- 国际版镜像下载地址：[`https://github.com/AlianBlank/download.unity.com`](https://github.com/AlianBlank/download.unity.com) (每周更新)
 
 ​		第三步：安装VS2019，在安装Unity时，可以选择安装VS2019，或者通过VS官网下载([`https://visualstudio.microsoft.com/zh-hans/thank-you-downloading-visual-studio/?sku=Community&rel=16`](https://visualstudio.microsoft.com/zh-hans/thank-you-downloading-visual-studio/?sku=Community&rel=16))，然后安装的时候选择：.NET桌面开发、使用C++桌面开发、使用Unity的游戏开发(可以去掉Unity编辑器安装)、使用C++的Linux开发、.Net Core跨平台开发。推荐安装以上组件，在DCET开发中都可能用到。
 
